@@ -1969,3 +1969,95 @@ footer {
 .work-head-top.is-drawn .head-handle-end {
     transition-delay: 0.85s;
 }
+
+/* ===== Buiten het scherm: interests grid + discipline statement ===== */
+.life-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.life-item {
+    position: relative;
+    padding: 2.5rem 2rem;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.3s ease;
+}
+
+.life-item .work-frame {
+    inset: -1px;
+}
+
+.life-item:hover .work-frame {
+    opacity: 1;
+    transform: none;
+}
+
+.life-item:hover {
+    z-index: 1;
+}
+
+.life-num {
+    display: block;
+    margin-bottom: 2.5rem;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.life-item:hover .life-num {
+    color: var(--accent);
+}
+
+.life-item h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+.life-item p {
+    max-width: 340px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.life-statement {
+    margin-top: 6rem;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    color: var(--text);
+}
+
+.life-statement span {
+    color: var(--accent);
+}
+
+@media (max-width: 1000px) {
+    .life-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .life-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .life-num {
+        margin-bottom: 1.5rem;
+    }
+
+    .life-statement {
+        margin-top: 4rem;
+    }
+}
