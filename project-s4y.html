@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.s4y.title">S4Y — Hamza</title>
+    <meta name="description" content="Case study in de maak: interface en gebruikservaring voor het S4Y-platform." data-i18n-attr="content:meta.s4y.desc" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="S4Y — Hamza" />
+    <meta property="og:description" content="Case study in de maak: interface en gebruikservaring voor het S4Y-platform." />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Hamza<span class="logo-dot">.</span><span class="logo-frame" aria-hidden="true"><i></i><i></i><i></i><i></i><b class="guide guide-top"></b><b class="guide guide-bottom"></b><b class="guide guide-left"></b><b class="guide guide-right"></b></span></a>
+        <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Taal / Language / Langue">
+          <button type="button" data-lang="nl" aria-pressed="true">NL</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        </div>
+          <a href="index.html#projecten" class="nav-back" data-i18n="nav.back">← Alle projecten</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="case-hero">
+      <div class="work-head-top">
+        <span class="work-eyebrow" data-i18n="case.eyebrow">Case study</span>
+        <span class="work-count">03 / 03</span>
+      </div>
+      <h1 class="case-title">S4Y</h1>
+
+      <div class="case-intro">
+        <div class="case-lead">
+          <p data-i18n="s4y.lead">Ik werk op dit moment aan de case study van S4Y, een platform waarvoor
+            ik de <strong>interface en gebruikservaring</strong> ontwerp. Binnenkort
+            lees je hier het volledige proces: van onderzoek en structuur tot de
+            uitgewerkte schermen.</p>
+          <div class="hero-buttons">
+            <a href="index.html#projecten" class="button-secondary" data-i18n="case.back">Terug naar portfolio</a>
+          </div>
+        </div>
+
+        <dl class="case-meta">
+          <div>
+            <dt data-i18n="case.discipline">Discipline</dt>
+            <dd data-i18n="s4y.discipline">UX/UI, platform</dd>
+          </div>
+          <div>
+            <dt data-i18n="case.status">Status</dt>
+            <dd><span class="work-status" data-i18n="status.soon">Binnenkort</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <figure class="case-media">
+        <div class="coming-soon-visual" aria-hidden="true">
+          <span class="coming-soon-name">S4Y</span>
+          <span class="coming-soon-label">Coming soon</span>
+        </div>
+      </figure>
+    </section>
+
+    <section class="case-next reveal">
+      <a class="work-item" href="project-next.html">
+        <span class="work-index" data-i18n="case.next">Volgend</span>
+        <div class="work-main">
+          <h2 class="work-title">NEXT</h2>
+          <p class="work-desc" data-i18n="s4y.nextdesc">Website voor een dagbesteding voor jongeren — live.</p>
+        </div>
+        <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></svg></span>
+      </a>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">Hamza<span>.</span></a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html#projecten" data-i18n="nav.projects">Projecten</a>
+          <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
+          <a href="index.html#over" data-i18n="nav.about">Over mij</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <p class="footer-copy">&copy; 2026 Hamza</p>
+        <a href="#" class="footer-top"><span data-i18n="footer.top">Terug naar boven</span> <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
