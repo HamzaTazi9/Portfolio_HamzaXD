@@ -21,11 +21,14 @@ python3 -m http.server 8000
 ├── project-sitr.html      # Case study: SITR (branding / web design)
 ├── project-s4y.html       # Case study: S4Y (UX/UI / platform)
 ├── project-next.html      # Case study: NEXT (web design / UX/UI)
+├── project-habit-tracker.html # Case study: Habit Tracker (HTML / CSS / JavaScript)
+├── project-movie-theater.html # Case study: Movie Theater (Figma / UI design)
 ├── style.css              # Shared stylesheet for every page
 ├── script.js              # Shared behaviour for every page
 ├── i18n.js                # Language switch (NL / EN / FR) + English and French texts
 └── assets/
     ├── NEXT_home.jpg      # NEXT homepage screenshot
+    ├── habit-tracker.jpg  # Habit Tracker screenshot
     └── favicon.svg        # Browser tab icon
 ```
 
@@ -33,13 +36,14 @@ Every page loads the same `style.css` and `script.js`. Each script feature check
 
 ## Homepage sections
 
-| Anchor       | Section                                                         |
-| ------------ | --------------------------------------------------------------- |
-| `#hero`      | "Denk het. Ontwerp het. Bouw het." statement on an interactive grid canvas (selected cell, fading trail, coordinates) |
-| `#projecten` | Numbered project list (`.work-item`) linking to the case study pages |
-| `#skills`    | Three columns — Denk / Ontwerp / Bouw — with plain skill lists  |
-| `#over`      | Rotating job title, about text, count-up stats and three principles |
-| `#contact`   | Email, LinkedIn and GitHub as large link rows                   |
+| Anchor         | Section                                                                                                               |
+| -------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `#hero`        | "Denk het. Ontwerp het. Bouw het." statement on an interactive grid canvas (selected cell, fading trail, coordinates) |
+| `#projecten`   | Numbered project list (`.work-item`) linking to the case study pages                                                  |
+| `#skills`      | Three columns — Denk / Ontwerp / Bouw — with plain skill lists                                                        |
+| `#over`        | Rotating job title and one short about paragraph                                                                      |
+| `#persoonlijk` | "Buiten het scherm": four interests and the discipline statement                                                      |
+| `#contact`     | Email, LinkedIn and GitHub as large link rows                                                                         |
 
 ## JavaScript features (`script.js`)
 
@@ -49,7 +53,6 @@ Every page loads the same `style.css` and `script.js`. Each script feature check
 - **Hero intro**: adds `.is-animating` to `#hero`, then steps through `think-sketch` → `think-fill` → `design-select` (frame + measured size) → `design-fill` → typing "Bouw het." → `intro-in`. Skipped with reduced motion; without JS the text is just visible
 - **Hero canvas** (`#heroCanvas`, `#heroCursorLabel`): draws the selected 64px grid cell, a fading trail and a coordinate label; only on devices with a mouse
 - **Word rotator** (`#wordRotator`): switches `.word` elements every 2.4s using the `is-active` / `is-leaving` classes
-- **Count-up stats**: `.stat-number[data-count]` counts up once when it scrolls into view; `data-suffix` is optional (e.g. `%`)
 - **Scroll reveal**: `.reveal` elements get the `.active` class once they enter the viewport
 
 ## Languages (NL / EN / FR)
@@ -64,12 +67,12 @@ Dutch is the source text and stays in the HTML. Every translatable element has `
 
 Design tokens are CSS variables on `:root` in `style.css`:
 
-| Token            | Value     | Use                  |
-| ---------------- | --------- | -------------------- |
-| `--accent`       | `#ff6b00` | Brand orange          |
-| `--accent-light` | `#ff8533` | Gradient partner      |
-| `--ink`          | `#1a1a2e` | Dark headings         |
-| `--text-muted`   | `#666666` | Secondary text        |
+| Token            | Value         | Use                     |
+| ---------------- | ------------- | ----------------------- |
+| `--accent`       | `#ff6b00`     | Brand orange            |
+| `--accent-light` | `#ff8533`     | Gradient partner        |
+| `--ink`          | `#1a1a2e`     | Dark headings           |
+| `--text-muted`   | `#666666`     | Secondary text          |
 | `--font-display` | Space Grotesk | Headings (Google Fonts) |
 
 Animations are turned off for users who have `prefers-reduced-motion` enabled.
@@ -79,7 +82,6 @@ Animations are turned off for users who have `prefers-reduced-motion` enabled.
 1. Copy one of the `project-*.html` pages (`project-next.html` is the most complete template: intro, meta list, numbered chapters and a "next project" row).
 2. Put images and videos in `assets/` and point the page to them.
 3. Add a `.work-item` to the `.work-list` in `index.html`, and update the `01 / 03` counters and "Volgend" links on the project pages.
-4. Update the "Projecten" count (`data-count`) in the stats of `#over`.
 
 ## Known gaps / TODO
 

@@ -287,43 +287,6 @@ if (wordRotator) {
     }
 }
 
-// Count-up animation for the About stats, triggered once on scroll
-const statNumbers = document.querySelectorAll(".stat-number[data-count]");
-
-if (statNumbers.length) {
-    const animateCount = (element) => {
-        const target = parseInt(element.dataset.count, 10);
-        const suffix = element.dataset.suffix || "";
-        const duration = 1200;
-        const start = performance.now();
-
-        const step = (now) => {
-            const progress = Math.min((now - start) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            element.textContent = Math.round(eased * target) + suffix;
-            if (progress < 1) {
-                requestAnimationFrame(step);
-            }
-        };
-
-        requestAnimationFrame(step);
-    };
-
-    const statsObserver = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    animateCount(entry.target);
-                    observer.unobserve(entry.target);
-                }
-            });
-        },
-        { threshold: 0.6 }
-    );
-
-    statNumbers.forEach((el) => statsObserver.observe(el));
-}
-
 function reveal() {
     const reveals = document.querySelectorAll(".reveal");
 
