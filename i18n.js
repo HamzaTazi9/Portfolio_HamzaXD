@@ -108,38 +108,83 @@
       "case.website": "Website",
       "status.dev": "In development",
       "next.alt": "Homepage of the NEXT website",
-      "next.ch1": "The brief",
+      "next.ch1":
+        "The brief",
       "next.ch1.body":
-        "NEXT needed a website that speaks to <strong>three audiences at once</strong>, with a calm, warm look that builds trust immediately. Young people who are stuck should feel welcome — not watched.",
-      "next.ch2": "Who it's for",
-      "next.aud1": "Young people",
+        "NEXT needed a website that speaks to <strong>three audiences</strong> at once and builds trust straight away. The biggest challenge: young people who are stuck should feel welcome, not watched.",
+      "next.aud1":
+        "Young people",
       "next.aud1.d":
-        "Need to feel welcome right away, without long texts or barriers.",
-      "next.aud2": "Parents",
+        "Feel welcome straight away, without long texts.",
+      "next.aud2":
+        "Parents",
       "next.aud2.d":
-        "Want to quickly understand what NEXT does and whether it suits their child.",
-      "next.aud3": "Professionals",
+        "Quickly understand what NEXT does.",
+      "next.aud3":
+        "Professionals",
       "next.aud3.d":
-        "Look for clear information about how it works and how to sign up.",
-      "next.ch3": "What I built",
+        "Clear information on how it works and how to sign up.",
+      "next.look":
+        "Look &amp; feel",
+      "next.look.p1":
+        "I started with a <strong>moodboard</strong> and a board full of reference websites. The feeling we were after: being outside, being together and daring to be yourself.",
+      "next.look.p2":
+        "The key idea: a <strong>looping yellow line</strong> that runs through the site like a route, with deliberately <strong>unaligned sections</strong>. Because life doesn't always run smoothly — it's a path you travel step by step.",
+      "next.look.p3":
+        "The brand sheet set the basics: <strong>golden yellow, green, cream and black</strong>, with Oswald for headings and Inter for text.",
+      "next.mood.cap":
+        "Moodboard",
+      "next.insp.cap":
+        "Inspiration &amp; references",
+      "next.brand.cap":
+        "Brand sheet",
+      "next.mood.alt":
+        "NEXT moodboard: young people outdoors, yellow handwritten accents and shades of green",
+      "next.insp.alt":
+        "Inspiration board with reference websites and notes on the yellow line, loose sections and handwritten quotes",
+      "next.brand.alt":
+        "NEXT brand sheet: yellow handwritten logo, Oswald and Inter, and the colours golden yellow, green, cream and black",
+      "next.lowfi":
+        "Wireframes",
+      "next.lowfi.p":
+        "For each page we sketched <strong>several low-fi variants</strong>, put them side by side and combined the strongest choices. That fixed the structure before we moved on to colour and detail.",
+      "next.lowfi.alt":
+        "NEXT low-fi wireframes with several variants per page: Home, About NEXT, For schools and CLB, Sign up, News and Contact",
+      "next.hifi":
+        "Prototype",
+      "next.hifi.p":
+        "The finished design in <strong>Figma</strong>. Click through the prototype yourself.",
+      "next.ut":
+        "User tests",
+      "next.ut.p":
+        "We tested the prototype with <strong>five users</strong>. The mood, the navigation and signing up worked well, and the team photos built trust. Still, four clear improvements came up:",
+      "next.ut.seen":
+        "What we saw",
+      "next.ut.done":
+        "What we changed",
+      "next.ut.s1":
+        "The core of NEXT wasn't clear right away: the images pulled attention away from the text.",
+      "next.ut.c1":
+        "A short, clear line at the top of the homepage: what NEXT does and for whom.",
+      "next.ut.s2":
+        "The word “programme” was too vague.",
+      "next.ut.c2":
+        "Page titles that say what you can do there.",
+      "next.ut.s3":
+        "Signing up was a small text link.",
+      "next.ut.c3":
+        "A permanent sign-up button in the navigation, and larger text.",
+      "next.ut.s4":
+        "The team, the strongest trust element, was hidden away.",
+      "next.ut.c4":
+        "The team more prominent on the homepage.",
+      "next.ch3":
+        "What I built",
       "next.ch3.p1":
-        "The entire website is <strong>hand-coded in HTML, CSS and JavaScript</strong> — no page builder, no framework. HTML for a semantic structure, CSS for layout, animation and the visual design, JavaScript for interaction and navigation.",
+        "I built the final design myself, <strong>hand-coded in HTML, CSS and JavaScript</strong> — no page builder or framework.",
       "next.ch3.p2":
-        "Alongside the public site, I built a <strong>custom admin area</strong>, so the NEXT team can add and edit content and activities themselves — without needing a developer every time.",
-      "next.ch4": "The process",
-      "next.ch4.p":
-        "I worked out the entire design process in <strong>Figma</strong>. I'm now turning that process into a full case study — this part is coming soon.",
+        "I also built a <strong>custom admin area</strong>, so the NEXT team can update content themselves without a developer.",
       "case.soon": "Coming soon",
-      "next.s1": "Research",
-      "next.s1.d": "What I researched and why",
-      "next.s2": "Personas",
-      "next.s2.d": "Who I designed for",
-      "next.s3": "User interviews",
-      "next.s3.d": "What users told me",
-      "next.s4": "Usability testing",
-      "next.s4.d": "What I tested and changed",
-      "next.s5": "Figma screens",
-      "next.s5.d": "From wireframe to final design",
       "next.nextdesc": "Branding and web design — case study coming soon.",
       "meta.sitr.title": "SITR — Hamza",
       "meta.sitr.desc":
@@ -257,38 +302,83 @@
       "case.website": "Site web",
       "status.dev": "En développement",
       "next.alt": "Page d'accueil du site NEXT",
-      "next.ch1": "La mission",
+      "next.ch1":
+        "La mission",
       "next.ch1.body":
-        "NEXT avait besoin d'un site qui s'adresse à <strong>trois publics à la fois</strong>, avec une ambiance calme et chaleureuse qui inspire immédiatement confiance. Les jeunes en difficulté doivent se sentir bienvenus — pas observés.",
-      "next.ch2": "Pour qui",
-      "next.aud1": "Les jeunes",
+        "NEXT cherchait un site qui s'adresse à <strong>trois publics</strong> à la fois et inspire confiance tout de suite. Le plus grand défi : les jeunes en difficulté doivent se sentir les bienvenus, pas observés.",
+      "next.aud1":
+        "Les jeunes",
       "next.aud1.d":
-        "Doivent se sentir bienvenus tout de suite, sans longs textes ni obstacles.",
-      "next.aud2": "Les parents",
+        "Se sentir bienvenus tout de suite, sans longs textes.",
+      "next.aud2":
+        "Les parents",
       "next.aud2.d":
-        "Veulent comprendre rapidement ce que fait NEXT et si cela convient à leur enfant.",
-      "next.aud3": "Les professionnels",
+        "Comprendre rapidement ce que fait NEXT.",
+      "next.aud3":
+        "Les professionnels",
       "next.aud3.d":
-        "Cherchent des informations claires sur le fonctionnement et l'inscription.",
-      "next.ch3": "Ce que j'ai développé",
+        "Des infos claires sur le fonctionnement et l'inscription.",
+      "next.look":
+        "Identité visuelle",
+      "next.look.p1":
+        "J'ai commencé par un <strong>moodboard</strong> et un tableau de sites de référence. Le sentiment recherché : être dehors, être ensemble et oser être soi-même.",
+      "next.look.p2":
+        "L'idée clé : une <strong>ligne jaune avec des boucles</strong> qui traverse le site comme un parcours, avec des <strong>sections volontairement non alignées</strong>. Car la vie ne se déroule pas toujours sans accroc — c'est un chemin que l'on parcourt pas à pas.",
+      "next.look.p3":
+        "La charte graphique a fixé les bases : <strong>jaune doré, vert, crème et noir</strong>, avec Oswald pour les titres et Inter pour le texte.",
+      "next.mood.cap":
+        "Moodboard",
+      "next.insp.cap":
+        "Inspiration &amp; références",
+      "next.brand.cap":
+        "Charte graphique",
+      "next.mood.alt":
+        "Moodboard de NEXT : jeunes en pleine nature, accents jaunes manuscrits et nuances de vert",
+      "next.insp.alt":
+        "Tableau d'inspiration avec des sites de référence et des notes sur la ligne jaune, les sections libres et les citations manuscrites",
+      "next.brand.alt":
+        "Charte graphique de NEXT : logo jaune manuscrit, Oswald et Inter, et les couleurs jaune doré, vert, crème et noir",
+      "next.lowfi":
+        "Wireframes",
+      "next.lowfi.p":
+        "Pour chaque page, nous avons esquissé <strong>plusieurs variantes basse fidélité</strong>, les avons comparées et avons combiné les meilleurs choix. La structure était ainsi fixée avant de passer à la couleur et aux détails.",
+      "next.lowfi.alt":
+        "Wireframes basse fidélité de NEXT avec plusieurs variantes par page : Accueil, À propos, Écoles et CLB, Inscription, Actualités et Contact",
+      "next.hifi":
+        "Prototype",
+      "next.hifi.p":
+        "Le design final dans <strong>Figma</strong>. Parcourez le prototype vous-même.",
+      "next.ut":
+        "Tests utilisateurs",
+      "next.ut.p":
+        "Nous avons testé le prototype avec <strong>cinq utilisateurs</strong>. L'ambiance, la navigation et l'inscription fonctionnaient bien, et les photos de l'équipe inspiraient confiance. Quatre points d'amélioration clairs sont pourtant ressortis :",
+      "next.ut.seen":
+        "Ce que nous avons vu",
+      "next.ut.done":
+        "Ce que nous avons changé",
+      "next.ut.s1":
+        "L'essence de NEXT n'était pas claire tout de suite : les images détournaient l'attention du texte.",
+      "next.ut.c1":
+        "Une phrase courte et claire en haut de l'accueil : ce que fait NEXT et pour qui.",
+      "next.ut.s2":
+        "Le mot « parcours » était trop vague.",
+      "next.ut.c2":
+        "Des titres de pages qui disent ce qu'on peut y faire.",
+      "next.ut.s3":
+        "L'inscription passait par un petit lien texte.",
+      "next.ut.c3":
+        "Un bouton d'inscription permanent dans la navigation, et un texte plus grand.",
+      "next.ut.s4":
+        "L'équipe, l'élément de confiance le plus fort, était cachée.",
+      "next.ut.c4":
+        "L'équipe plus visible sur la page d'accueil.",
+      "next.ch3":
+        "Ce que j'ai développé",
       "next.ch3.p1":
-        "L'intégralité du site est <strong>codée à la main en HTML, CSS et JavaScript</strong> — sans page builder ni framework. Le HTML pour une structure sémantique, le CSS pour la mise en page, l'animation et le design visuel, le JavaScript pour l'interaction et la navigation.",
+        "J'ai développé le design final moi-même, <strong>codé à la main en HTML, CSS et JavaScript</strong> — sans page builder ni framework.",
       "next.ch3.p2":
-        "En plus du site public, j'ai développé un <strong>espace d'administration sur mesure</strong>, pour que l'équipe de NEXT puisse ajouter et modifier elle-même le contenu et l'offre — sans avoir besoin d'un développeur à chaque fois.",
-      "next.ch4": "Le processus",
-      "next.ch4.p":
-        "J'ai réalisé tout le processus de design dans <strong>Figma</strong>. Je le transforme actuellement en une étude de cas complète — cette partie arrive bientôt.",
+        "J'ai aussi créé un <strong>espace d'administration sur mesure</strong>, pour que l'équipe de NEXT puisse modifier le contenu elle-même, sans développeur.",
       "case.soon": "Bientôt disponible",
-      "next.s1": "Recherche",
-      "next.s1.d": "Ce que j'ai étudié et pourquoi",
-      "next.s2": "Personas",
-      "next.s2.d": "Pour qui j'ai conçu",
-      "next.s3": "Entretiens utilisateurs",
-      "next.s3.d": "Ce que les utilisateurs m'ont dit",
-      "next.s4": "Tests d'utilisabilité",
-      "next.s4.d": "Ce que j'ai testé et ajusté",
-      "next.s5": "Écrans Figma",
-      "next.s5.d": "Du wireframe au design final",
       "next.nextdesc":
         "Branding et web design — étude de cas bientôt disponible.",
       "meta.sitr.title": "SITR — Hamza",

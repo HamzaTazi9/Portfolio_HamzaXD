@@ -1623,6 +1623,11 @@ footer {
   height: auto;
 }
 
+.case-chapter-body .case-media,
+.case-chapter-body .case-embed {
+  margin-top: 2.5rem;
+}
+
 .case-media .coming-soon-visual {
   height: auto;
   aspect-ratio: 16 / 9;
@@ -1755,6 +1760,72 @@ footer {
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.7;
+}
+
+/* two images side by side inside a case chapter */
+.case-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.case-media-grid .case-media {
+  margin-top: 1.25rem;
+}
+
+.case-media figcaption {
+  padding: 0.6rem 0.8rem;
+  background: var(--primary);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+/* "what we saw -> what we changed" rows (user test results) */
+.case-changes {
+  margin-top: 2rem;
+  list-style: none;
+  border-top: 1px solid var(--border);
+}
+
+.case-changes li {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.case-changes li span:last-child {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.case-changes li.case-changes-head span {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .case-media-grid,
+  .case-changes li {
+    grid-template-columns: 1fr;
+  }
+
+  .case-changes li {
+    gap: 0.35rem;
+  }
+
+  .case-changes li.case-changes-head {
+    display: none;
+  }
 }
 
 /* "coming soon" block for parts of a case study that are still in progress */
