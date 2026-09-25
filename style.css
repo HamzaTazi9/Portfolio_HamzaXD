@@ -1355,13 +1355,6 @@ footer {
   background: var(--dark);
 }
 
-.work-media-clip.habit-tracker-media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #dce9ee;
-}
-
 /* Figma-style selection frame around the image on hover (same as the hero) */
 .work-frame {
   position: absolute;
@@ -1419,26 +1412,6 @@ footer {
 
 .work-media img {
   display: block;
-}
-
-.work-media img.habit-tracker-preview {
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
-  object-position: center center;
-  padding: 0.75rem;
-  background: #dce9ee;
-}
-
-.work-media img.movie-theater-preview {
-  object-fit: contain;
-  object-position: center center;
-  background: #161616;
-}
-
-.work-item:hover .work-media img.habit-tracker-preview,
-.work-item:focus-visible .work-media img.habit-tracker-preview {
-  transform: none;
 }
 
 .work-item:hover .work-media img,
