@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.projects.title">Projecten — Hamza</title>
+    <meta
+      name="description"
+      content="Alle projecten van Hamza, UX designer en front-end developer: van eerste idee tot werkende website."
+      data-i18n-attr="content:meta.projects.desc"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projecten — Hamza" />
+    <meta
+      property="og:description"
+      content="Alle projecten van Hamza, UX designer en front-end developer: van eerste idee tot werkende website."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo"
+          >Hamza<span class="logo-dot" aria-hidden="true"></span
+          ><span class="logo-frame" aria-hidden="true"
+            ><i></i><i></i><i></i><i></i><b class="guide guide-top"></b
+            ><b class="guide guide-bottom"></b><b class="guide guide-left"></b
+            ><b class="guide guide-right"></b></span
+        ></a>
+        <div class="nav-actions">
+          <div
+            class="lang-switch"
+            role="group"
+            aria-label="Taal / Language / Langue"
+          >
+            <button type="button" data-lang="nl" aria-pressed="true">NL</button>
+            <button type="button" data-lang="en" aria-pressed="false">
+              EN
+            </button>
+            <button type="button" data-lang="fr" aria-pressed="false">
+              FR
+            </button>
+          </div>
+          <a href="index.html" class="nav-back" data-i18n="nav.home"
+            >← Home</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section id="projecten" class="projects-page">
+      <div class="work-head">
+        <div class="work-head-top">
+          <span class="work-eyebrow" data-i18n="work.all.eyebrow"
+            >Alle projecten</span
+          >
+        </div>
+        <h1 data-i18n="work.all.title">Al mijn projecten</h1>
+        <p data-i18n="work.intro">
+          Vijf projecten die mijn aanpak, research en visuele keuzes laten zien
+          — van eerste idee tot werkende website.
+        </p>
+      </div>
+
+      <div class="work-list">
+        <a class="work-item" href="project-next.html">
+          <span class="work-index">01</span>
+          <div class="work-main">
+            <h3 class="work-title">NEXT</h3>
+            <p class="work-desc" data-i18n="work.next.desc">
+              Website voor een dagbesteding voor jongeren die (even) vastlopen
+              met school — warm, rustig en helder voor jongeren, ouders en
+              professionals.
+            </p>
+          </div>
+          <div class="work-meta">
+            <span class="work-status is-live" data-i18n="status.live"
+              >Live</span
+            >
+            <ul class="work-tags">
+              <li>Web Design</li>
+              <li>UX/UI</li>
+              <li>Front-end</li>
+            </ul>
+          </div>
+          <div class="work-media">
+            <div class="work-media-clip">
+              <img
+                src="assets/NEXT_home.jpg"
+                alt="NEXT website homepage"
+                loading="lazy"
+                data-i18n-attr="alt:work.next.alt"
+              />
+            </div>
+            <span class="work-frame" aria-hidden="true"
+              ><i></i><i></i><i></i><i></i
+            ></span>
+          </div>
+          <span class="work-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 17 17 7M9 7h8v8"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+              />
+            </svg>
+          </span>
+        </a>
+
+        <a
+          class="work-item habit-tracker-item"
+          href="project-habit-tracker.html"
+        >
+          <span class="work-index">02</span>
+          <div class="work-main">
+            <h3 class="work-title">Habit Tracker</h3>
+            <p class="work-desc">
+              Een rustige habit tracker voor dagelijkse gewoontes, voortgang en
+              planning.
+            </p>
+          </div>
+          <div class="work-meta">
+            <span class="work-status is-live">Live</span>
+            <ul class="work-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="work-media">
+            <div class="work-media-clip habit-tracker-media">
+              <img
+                src="assets/habit-tracker.jpg"
+                class="habit-tracker-preview"
+                alt="Habit Tracker interface"
+                loading="lazy"
+              />
+            </div>
+            <span class="work-frame" aria-hidden="true"
+              ><i></i><i></i><i></i><i></i
+            ></span>
+          </div>
+          <span class="work-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 17 17 7M9 7h8v8"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+              />
+            </svg>
+          </span>
+        </a>
+
+        <a class="work-item" href="project-movie-theater.html">
+          <span class="work-index">03</span>
+          <div class="work-main">
+            <h3 class="work-title">Movie Theater</h3>
+            <p class="work-desc">
+              Een experimentele movie list, ontworpen in Figma tijdens mijn
+              eerste jaar.
+            </p>
+          </div>
+          <div class="work-meta">
+            <span class="work-status is-live">Figma project</span>
+            <ul class="work-tags">
+              <li>Figma</li>
+              <li>UI Design</li>
+            </ul>
+          </div>
+          <div class="work-media">
+            <div class="work-media-clip">
+              <img
+                src="assets/movie-theater-home.jpg"
+                class="movie-theater-preview"
+                alt="Movie Theater Figma scherm"
+              />
+            </div>
+            <span class="work-frame" aria-hidden="true"
+              ><i></i><i></i><i></i><i></i
+            ></span>
+          </div>
+          <span class="work-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 17 17 7M9 7h8v8"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+              />
+            </svg>
+          </span>
+        </a>
+
+        <a class="work-item is-coming-soon" href="project-sitr.html">
+          <span class="work-index">04</span>
+          <div class="work-main">
+            <h3 class="work-title">SITR</h3>
+            <p class="work-desc" data-i18n="work.sitr.desc">
+              Website en visuele identiteit voor clothing brand SITR.
+            </p>
+          </div>
+          <div class="work-meta">
+            <span class="work-status" data-i18n="status.soon">Binnenkort</span>
+            <ul class="work-tags">
+              <li>Branding</li>
+              <li>Web Design</li>
+            </ul>
+          </div>
+          <div class="work-media">
+            <div class="work-media-clip">
+              <div class="coming-soon-visual" aria-hidden="true">
+                <span class="coming-soon-name">SITR</span>
+                <span class="coming-soon-label">Coming soon</span>
+              </div>
+            </div>
+            <span class="work-frame" aria-hidden="true"
+              ><i></i><i></i><i></i><i></i
+            ></span>
+          </div>
+          <span class="work-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 17 17 7M9 7h8v8"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+              />
+            </svg>
+          </span>
+        </a>
+
+        <a class="work-item is-coming-soon" href="project-s4y.html">
+          <span class="work-index">05</span>
+          <div class="work-main">
+            <h3 class="work-title">S4Y</h3>
+            <p class="work-desc" data-i18n="work.s4y.desc">
+              Interface en gebruikservaring voor het S4Y-platform.
+            </p>
+          </div>
+          <div class="work-meta">
+            <span class="work-status" data-i18n="status.soon">Binnenkort</span>
+            <ul class="work-tags">
+              <li>UX/UI</li>
+              <li data-i18n="tag.platform">Platform</li>
+            </ul>
+          </div>
+          <div class="work-media">
+            <div class="work-media-clip">
+              <div class="coming-soon-visual" aria-hidden="true">
+                <span class="coming-soon-name">S4Y</span>
+                <span class="coming-soon-label">Coming soon</span>
+              </div>
+            </div>
+            <span class="work-frame" aria-hidden="true"
+              ><i></i><i></i><i></i><i></i
+            ></span>
+          </div>
+          <span class="work-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 17 17 7M9 7h8v8"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+              />
+            </svg>
+          </span>
+        </a>
+
+        <div class="work-item work-more">
+          <span class="work-index">+</span>
+          <div class="work-main">
+            <h3 class="work-title" data-i18n="work.more.title">
+              Meer projecten onderweg
+            </h3>
+            <p class="work-desc" data-i18n="work.more.desc">
+              Ik werk aan nieuwe projecten. Binnenkort vind je hier meer werk.
+            </p>
+          </div>
+          <div class="work-meta">
+            <span class="work-status" data-i18n="status.progress"
+              >In de maak</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo"
+          >Hamza<span class="logo-dot" aria-hidden="true"></span
+        ></a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="projecten.html" data-i18n="nav.projects">Projecten</a>
+          <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
+          <a href="index.html#over" data-i18n="nav.about">Over mij</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <p class="footer-copy">&copy; 2026 Hamza</p>
+        <a href="#" class="footer-top"
+          ><span data-i18n="footer.top">Terug naar boven</span>
+          <span aria-hidden="true">↑</span></a
+        >
+      </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

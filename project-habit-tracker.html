@@ -43,7 +43,7 @@
               FR
             </button>
           </div>
-          <a href="index.html#projecten" class="nav-back" data-i18n="nav.back"
+          <a href="projecten.html" class="nav-back" data-i18n="nav.back"
             >← Alle projecten</a
           >
         </div>
@@ -52,31 +52,25 @@
 
     <section class="case-hero">
       <div class="work-head-top">
-        <span class="work-eyebrow">Case study</span>
+        <span class="work-eyebrow" data-i18n="case.eyebrow">Case study</span>
         <span class="work-count">02 / 05</span>
       </div>
       <h1 class="case-title">Habit Tracker</h1>
       <div class="case-intro">
         <div class="case-lead">
-          <p>
-            Een persoonlijke habit tracker voor studenten die meer ritme en
-            overzicht willen in hun dagelijkse gewoontes.
-          </p>
-          <p>
-            Ik vond dit een leuk project omdat ik een herkenbaar dagelijks
-            probleem kon vertalen naar een rustige, duidelijke interface die
-            meteen bruikbaar is.
-          </p>
+          <p data-i18n="ht.lead1">Een habit tracker voor studenten die meer ritme en overzicht willen in hun dagelijkse gewoontes.</p>
+          <p data-i18n="ht.lead2">De uitdaging: een herkenbaar dagelijks probleem vertalen naar een <strong>rustige interface</strong> die je meteen kunt gebruiken — zonder uitleg en zonder druk.</p>
           <div class="hero-buttons">
             <a
               href="https://habit-tracker-examen.vercel.app/"
               class="cta-button"
               target="_blank"
               rel="noopener"
+              data-i18n="ht.open"
               >Open de habit tracker →</a
             >
             <a
-              href="index.html#projecten"
+              href="projecten.html"
               class="button-secondary"
               data-i18n="case.back"
               >Terug naar portfolio</a
@@ -85,26 +79,37 @@
         </div>
         <dl class="case-meta">
           <div>
-            <dt>Rol</dt>
-            <dd>UX/UI & front-end</dd>
+            <dt data-i18n="case.role">Rol</dt>
+            <dd>UX/UI &amp; front-end</dd>
           </div>
           <div>
-            <dt>Discipline</dt>
-            <dd>Web design, interactie</dd>
+            <dt data-i18n="case.discipline">Discipline</dt>
+            <dd><span data-i18n="ht.disc">Web design, interactie</span></dd>
           </div>
           <div>
-            <dt>Gebouwd met</dt>
+            <dt data-i18n="case.built">Gebouwd met</dt>
             <dd>HTML, CSS, JavaScript</dd>
           </div>
           <div>
-            <dt>Opslag</dt>
+            <dt data-i18n="case.storage">Opslag</dt>
             <dd>LocalStorage</dd>
           </div>
           <div>
-            <dt>Status</dt>
-            <dd><span class="work-status is-live">Live</span></dd>
+            <dt data-i18n="case.status">Status</dt>
+            <dd><span class="work-status is-live" data-i18n="status.live">Live</span></dd>
           </div>
         </dl>
+      </div>
+
+      <div class="case-media-grid case-media-phones">
+          <figure class="case-media">
+            <img src="assets/habit-tracker-habits.jpg" alt="Habit Tracker: overzicht van habits met afgevinkte taken, streaks en voortgangsbalk" loading="lazy" data-i18n-attr="alt:ht.alt1" />
+            <figcaption data-i18n="ht.cap1">Habits: afvinken, streaks en dagelijkse voortgang</figcaption>
+          </figure>
+          <figure class="case-media">
+            <img src="assets/habit-tracker-schedule.jpg" alt="Habit Tracker: dagschema met lessen en activiteiten" loading="lazy" data-i18n-attr="alt:ht.alt2" />
+            <figcaption data-i18n="ht.cap2">Schema: lessen en activiteiten per dag</figcaption>
+          </figure>
       </div>
     </section>
 
@@ -112,47 +117,41 @@
       <div class="case-chapters">
         <div class="case-chapter">
           <span class="case-chapter-num">01</span>
-          <h2>Het idee</h2>
+          <h2 data-i18n="ht.ch1">Het idee</h2>
           <div class="case-chapter-body">
-            <p>
-              Het doel was om dagelijkse habits eenvoudig te maken: toevoegen,
-              afvinken en direct zien hoe je ervoor staat. De interface geeft
-              genoeg feedback zonder druk of onnodige complexiteit.
-            </p>
+            <p data-i18n="ht.ch1.p">Habits moeten eenvoudig zijn: <strong>toevoegen, afvinken en direct zien hoe je ervoor staat</strong>. Meer niet.</p>
           </div>
         </div>
         <div class="case-chapter">
           <span class="case-chapter-num">02</span>
-          <h2>Wat ik bouwde</h2>
+          <h2 data-i18n="ht.ch2">Ontwerpkeuzes</h2>
           <div class="case-chapter-body">
-            <p>
-              De tracker bevat habits met streaks, dagelijkse voortgang, een
-              7-daagse geschiedenis, zoeken en inline bewerken. Daarnaast kun je
-              een weekschema bijhouden voor lessen of activiteiten.
-            </p>
+            <p data-i18n="ht.ch2.p">Ik koos voor een <strong>zacht kleurenpalet</strong> en één duidelijke actie per habit: afvinken. Streaks en een 7-daagse geschiedenis geven <strong>motivatie zonder druk</strong>, en de voortgangsbalk toont in één oogopslag hoe je dag gaat.</p>
           </div>
         </div>
         <div class="case-chapter">
           <span class="case-chapter-num">03</span>
-          <h2>Wat ik leerde</h2>
+          <h2 data-i18n="ht.ch3">Wat ik bouwde</h2>
           <div class="case-chapter-body">
-            <p>
-              Dit project was leuk omdat ik design en logica direct samen kon
-              testen. Ik leerde hoe belangrijk kleine interacties zijn:
-              duidelijke feedback, goede lege staten en data die na een refresh
-              blijft bestaan.
-            </p>
+            <p data-i18n="ht.ch3.p">Habits met streaks, dagelijkse voortgang, zoeken en inline bewerken, plus een <strong>weekschema</strong> voor lessen en activiteiten. Alles blijft bewaard in LocalStorage, ook na een refresh.</p>
+          </div>
+        </div>
+        <div class="case-chapter">
+          <span class="case-chapter-num">04</span>
+          <h2 data-i18n="ht.ch4">Wat ik leerde</h2>
+          <div class="case-chapter-body">
+            <p data-i18n="ht.ch4.p">Omdat ik zowel het ontwerp als de code maakte, kon ik ideeën meteen testen. Ik leerde hoe belangrijk <strong>kleine interacties</strong> zijn: duidelijke feedback, goede lege staten en data die blijft staan.</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="case-next reveal">
-      <a class="work-item" href="index.html#projecten">
-        <span class="work-index">Terug</span>
+      <a class="work-item" href="projecten.html">
+        <span class="work-index" data-i18n="case.backlabel">Terug</span>
         <div class="work-main">
-          <h2 class="work-title">Alle projecten</h2>
-          <p class="work-desc">
+          <h2 class="work-title" data-i18n="case.allprojects">Alle projecten</h2>
+          <p class="work-desc" data-i18n="case.allprojects.d">
             Bekijk ook de andere projecten in mijn portfolio.
           </p>
         </div>
@@ -174,7 +173,7 @@
           >Hamza<span class="logo-dot" aria-hidden="true"></span
         ></a>
         <nav class="footer-nav" aria-label="Footer">
-          <a href="index.html#projecten">Projecten</a
+          <a href="projecten.html">Projecten</a
           ><a href="index.html#skills">Skills</a
           ><a href="index.html#over">Over mij</a
           ><a href="index.html#contact">Contact</a>

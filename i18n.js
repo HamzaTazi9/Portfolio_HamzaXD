@@ -43,6 +43,20 @@
       "hero.cta": "View my work →",
       "hero.contact": "Get in touch",
       "hero.status": "Looking for an internship and new collaborations",
+      "work.intro.featured":
+        "A selection of my work: three projects that show my approach, research and visual choices.",
+      "work.all":
+        "View all projects →",
+      "work.all.eyebrow":
+        "All projects",
+      "work.all.title":
+        "All my projects",
+      "nav.home":
+        "← Home",
+      "meta.projects.title":
+        "Projects — Hamza",
+      "meta.projects.desc":
+        "All projects by Hamza, UX designer and front-end developer: from first idea to working website.",
       "work.eyebrow": "Selected work",
       "work.title": "Featured projects",
       "work.intro":
@@ -80,7 +94,23 @@
       "about.w3": "problem solver",
       "about.w4": "detail fanatic",
       "about.p1":
-        "My journey started with a simple fascination: why do some apps and websites feel effortless, and others don't? That took me from research and wireframes to HTML, CSS and JavaScript — because a good idea only counts <strong>when it actually works</strong>.",
+        "I'm <strong>Hamza Tazi</strong>, a third-year <strong>Digital Experience Design</strong> student at Thomas More in Mechelen. I design digital products and then build them myself.",
+      "about.p2":
+        "In secondary school I studied <strong>Human Sciences</strong>. That's where I learned to look at how people think and behave — and I bring that into every design. Because a good idea only counts <strong>when it actually works</strong> for the people who use it.",
+      "about.now":
+        "Now",
+      "about.now.t":
+        "3rd year Digital Experience Design",
+      "about.now.school":
+        "Thomas More, Mechelen",
+      "about.now.d":
+        "Looking for an internship",
+      "about.before":
+        "Secondary school",
+      "about.before.t":
+        "Human Sciences (general secondary)",
+      "about.before.d":
+        "Psychology, sociology and cultural studies",
       "contact.status": "Open to internships",
       "contact.title": "Let's work<br />together",
       "contact.intro":
@@ -98,6 +128,76 @@
       "case.discipline": "Discipline",
       "case.back": "Back to portfolio",
       "case.next": "Next",
+      "case.storage":
+        "Storage",
+      "case.type":
+        "Type",
+      "case.focus":
+        "Focus",
+      "case.allprojects":
+        "All projects",
+      "case.allprojects.d":
+        "Take a look at the other projects in my portfolio.",
+      "case.backlabel":
+        "Back",
+      "ht.lead1":
+        "A habit tracker for students who want more rhythm and overview in their daily habits.",
+      "ht.lead2":
+        "The challenge: turning a familiar everyday problem into a <strong>calm interface</strong> you can use straight away — no explanation, no pressure.",
+      "ht.open":
+        "Open the habit tracker →",
+      "ht.disc":
+        "Web design, interaction",
+      "ht.cap1":
+        "Habits: check off, streaks and daily progress",
+      "ht.cap2":
+        "Schedule: classes and activities per day",
+      "ht.alt1":
+        "Habit Tracker: habit overview with checked tasks, streaks and a progress bar",
+      "ht.alt2":
+        "Habit Tracker: daily schedule with classes and activities",
+      "ht.ch1":
+        "The idea",
+      "ht.ch2":
+        "Design choices",
+      "ht.ch3":
+        "What I built",
+      "ht.ch4":
+        "What I learned",
+      "ht.ch1.p":
+        "Habits should be simple: <strong>add, check off and instantly see how you're doing</strong>. Nothing more.",
+      "ht.ch2.p":
+        "I chose a <strong>soft colour palette</strong> and one clear action per habit: checking it off. Streaks and a 7-day history give <strong>motivation without pressure</strong>, and the progress bar shows at a glance how your day is going.",
+      "ht.ch3.p":
+        "Habits with streaks, daily progress, search and inline editing, plus a <strong>weekly schedule</strong> for classes and activities. Everything is saved in LocalStorage, even after a refresh.",
+      "ht.ch4.p":
+        "Because I made both the design and the code, I could test ideas right away. I learned how much <strong>small interactions</strong> matter: clear feedback, good empty states and data that stays put.",
+      "mt.eyebrow":
+        "Figma project",
+      "mt.lead1":
+        "A movie list for a cinema, designed in Figma during my first year.",
+      "mt.lead2":
+        "My first design project: this is where I practised <strong>screen layout, typography and colour</strong>, and tested how animations and a prototype bring an interface to life.",
+      "mt.open":
+        "View the Figma project →",
+      "mt.type":
+        "School project, 1st year",
+      "mt.focus":
+        "Movie list, visual design",
+      "mt.status":
+        "Figma file",
+      "mt.ch1":
+        "The brief",
+      "mt.ch2":
+        "Design choices",
+      "mt.ch3":
+        "What I learned",
+      "mt.ch1.p":
+        "Design a simple list of films for a cinema, with <strong>clear information</strong> and a strong first impression.",
+      "mt.ch2.p":
+        "A <strong>dark interface</strong> so the film posters do the work, one featured film per screen with a red glow, and a fixed bottom navigation within thumb reach.",
+      "mt.ch3.p":
+        "I learned to work with frames, components and prototypes in Figma, and saw how <strong>small choices in spacing, typography and colour</strong> make an interface clearer.",
       "next.lead1":
         "NEXT is a practical day programme for young people aged 13 to 19 who are (temporarily) stuck at school or at home. They help young people rebuild rhythm, structure and self-confidence, so they can take the step back to school, work or training.",
       "next.lead2":
@@ -235,6 +335,20 @@
       "hero.cta": "Voir mes projets →",
       "hero.contact": "Me contacter",
       "hero.status": "À la recherche d'un stage et de nouvelles collaborations",
+      "work.intro.featured":
+        "Une sélection de mon travail : trois projets qui montrent mon approche, ma recherche et mes choix visuels.",
+      "work.all":
+        "Voir tous les projets →",
+      "work.all.eyebrow":
+        "Tous les projets",
+      "work.all.title":
+        "Tous mes projets",
+      "nav.home":
+        "← Accueil",
+      "meta.projects.title":
+        "Projets — Hamza",
+      "meta.projects.desc":
+        "Tous les projets de Hamza, UX designer et développeur front-end : de la première idée au site fonctionnel.",
       "work.eyebrow": "Projets choisis",
       "work.title": "Projets à la une",
       "work.intro":
@@ -274,7 +388,23 @@
       "about.w3": "résolveur de problèmes",
       "about.w4": "perfectionniste",
       "about.p1":
-        "Mon parcours a commencé par une simple fascination : pourquoi certaines applications et certains sites semblent-ils si fluides, et d'autres non ? Cela m'a mené de la recherche et des wireframes au HTML, CSS et JavaScript — parce qu'une bonne idée ne compte <strong>que si elle fonctionne vraiment</strong>.",
+        "Je suis <strong>Hamza Tazi</strong>, étudiant en troisième année de <strong>Digital Experience Design</strong> à Thomas More, à Malines. Je conçois des produits numériques, puis je les développe moi-même.",
+      "about.p2":
+        "Au secondaire, j'ai suivi l'option <strong>Sciences humaines</strong>. J'y ai appris à observer comment les gens pensent et agissent — et je l'intègre dans chaque design. Car une bonne idée ne compte <strong>que si elle fonctionne vraiment</strong> pour ceux qui l'utilisent.",
+      "about.now":
+        "Aujourd'hui",
+      "about.now.t":
+        "3e année Digital Experience Design",
+      "about.now.school":
+        "Thomas More, Malines",
+      "about.now.d":
+        "À la recherche d'un stage",
+      "about.before":
+        "Secondaire",
+      "about.before.t":
+        "Sciences humaines (enseignement général)",
+      "about.before.d":
+        "Psychologie, sociologie et sciences culturelles",
       "contact.status": "Ouvert aux stages",
       "contact.title": "Travaillons<br />ensemble",
       "contact.intro":
@@ -292,6 +422,76 @@
       "case.discipline": "Discipline",
       "case.back": "Retour au portfolio",
       "case.next": "Suivant",
+      "case.storage":
+        "Stockage",
+      "case.type":
+        "Type",
+      "case.focus":
+        "Focus",
+      "case.allprojects":
+        "Tous les projets",
+      "case.allprojects.d":
+        "Découvrez aussi les autres projets de mon portfolio.",
+      "case.backlabel":
+        "Retour",
+      "ht.lead1":
+        "Un suivi d'habitudes pour les étudiants qui veulent plus de rythme et de clarté au quotidien.",
+      "ht.lead2":
+        "Le défi : transformer un problème quotidien familier en une <strong>interface apaisante</strong> que l'on peut utiliser tout de suite — sans explication, sans pression.",
+      "ht.open":
+        "Ouvrir le suivi d'habitudes →",
+      "ht.disc":
+        "Web design, interaction",
+      "ht.cap1":
+        "Habitudes : cocher, séries et progression du jour",
+      "ht.cap2":
+        "Planning : cours et activités par jour",
+      "ht.alt1":
+        "Suivi d'habitudes : aperçu avec tâches cochées, séries et barre de progression",
+      "ht.alt2":
+        "Suivi d'habitudes : planning du jour avec cours et activités",
+      "ht.ch1":
+        "L'idée",
+      "ht.ch2":
+        "Choix de design",
+      "ht.ch3":
+        "Ce que j'ai développé",
+      "ht.ch4":
+        "Ce que j'ai appris",
+      "ht.ch1.p":
+        "Les habitudes doivent rester simples : <strong>ajouter, cocher et voir tout de suite où l'on en est</strong>. Rien de plus.",
+      "ht.ch2.p":
+        "J'ai choisi une <strong>palette douce</strong> et une seule action claire par habitude : la cocher. Les séries et l'historique sur 7 jours apportent de la <strong>motivation sans pression</strong>, et la barre de progression montre d'un coup d'œil comment se passe la journée.",
+      "ht.ch3.p":
+        "Des habitudes avec séries, progression du jour, recherche et modification en ligne, plus un <strong>planning hebdomadaire</strong> pour les cours et activités. Tout est conservé dans le LocalStorage, même après un rafraîchissement.",
+      "ht.ch4.p":
+        "Comme j'ai réalisé à la fois le design et le code, j'ai pu tester mes idées immédiatement. J'ai appris l'importance des <strong>petites interactions</strong> : un retour clair, de bons états vides et des données qui restent.",
+      "mt.eyebrow":
+        "Projet Figma",
+      "mt.lead1":
+        "Une liste de films pour un cinéma, conçue dans Figma pendant ma première année.",
+      "mt.lead2":
+        "Mon premier projet de design : j'y ai travaillé la <strong>mise en page, la typographie et la couleur</strong>, et testé comment les animations et un prototype donnent vie à une interface.",
+      "mt.open":
+        "Voir le projet Figma →",
+      "mt.type":
+        "Projet scolaire, 1re année",
+      "mt.focus":
+        "Liste de films, design visuel",
+      "mt.status":
+        "Fichier Figma",
+      "mt.ch1":
+        "La mission",
+      "mt.ch2":
+        "Choix de design",
+      "mt.ch3":
+        "Ce que j'ai appris",
+      "mt.ch1.p":
+        "Concevoir une liste de films simple pour un cinéma, avec des <strong>informations claires</strong> et une première impression forte.",
+      "mt.ch2.p":
+        "Une <strong>interface sombre</strong> pour laisser parler les affiches, un film mis en avant par écran avec un halo rouge, et une navigation fixe en bas, à portée de pouce.",
+      "mt.ch3.p":
+        "J'ai appris à travailler avec les frames, composants et prototypes dans Figma, et vu comment de <strong>petits choix d'espacement, de typographie et de couleur</strong> rendent une interface plus claire.",
       "next.lead1":
         "NEXT est un accueil de jour pratique pour les jeunes de 13 à 19 ans qui décrochent (temporairement) à l'école ou à la maison. L'équipe les aide à retrouver un rythme, une structure et la confiance en eux, afin qu'ils puissent reprendre l'école, un travail ou une formation.",
       "next.lead2":
