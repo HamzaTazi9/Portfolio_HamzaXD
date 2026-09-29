@@ -11,6 +11,7 @@
 
   const translations = {
     en: {
+      "case.designed": "Designed in",
       "s4y.l3.d": "Copy differs in length between French and Dutch. A layout has to absorb that without breaking.",
       "s4y.l3": "Thinking in two languages",
       "s4y.l2.d": "One question at a time, a progress bar and personal details only at the end: that's how a long form feels light.",
@@ -341,6 +342,7 @@
       "s4y.nextdesc": "Website for a day programme for young people — live.",
     },
     fr: {
+      "case.designed": "Conçu dans",
       "s4y.l3.d": "Les textes n'ont pas la même longueur en français et en néerlandais. La mise en page doit l'absorber sans casser.",
       "s4y.l3": "Penser en deux langues",
       "s4y.l2.d": "Une question à la fois, une barre de progression et les données personnelles seulement à la fin : ainsi, un long formulaire paraît léger.",
