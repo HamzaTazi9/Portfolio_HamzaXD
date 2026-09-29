@@ -101,7 +101,7 @@
       "work.eyebrow": "Selected work",
       "work.title": "Featured projects",
       "work.intro":
-        "Five projects that show my approach, research and visual choices — from first idea to working website.",
+        "Four projects that show my approach, research and visual choices — from first idea to working website.",
       "work.next.desc":
         "Website for a day programme for young people who are (temporarily) stuck at school — warm, calm and clear for young people, parents and professionals.",
       "status.live": "Live",
@@ -213,32 +213,6 @@
         "Habits with streaks, daily progress, search and inline editing, plus a <strong>weekly schedule</strong> for classes and activities. Everything is saved in LocalStorage, even after a refresh.",
       "ht.ch4.p":
         "Because I made both the design and the code, I could test ideas right away. I learned how much <strong>small interactions</strong> matter: clear feedback, good empty states and data that stays put.",
-      "mt.eyebrow":
-        "Figma project",
-      "mt.lead1":
-        "A movie list for a cinema, designed in Figma during my first year.",
-      "mt.lead2":
-        "My first design project: this is where I practised <strong>screen layout, typography and colour</strong>, and tested how animations and a prototype bring an interface to life.",
-      "mt.open":
-        "View the Figma project →",
-      "mt.type":
-        "School project, 1st year",
-      "mt.focus":
-        "Movie list, visual design",
-      "mt.status":
-        "Figma file",
-      "mt.ch1":
-        "The brief",
-      "mt.ch2":
-        "Design choices",
-      "mt.ch3":
-        "What I learned",
-      "mt.ch1.p":
-        "Design a simple list of films for a cinema, with <strong>clear information</strong> and a strong first impression.",
-      "mt.ch2.p":
-        "A <strong>dark interface</strong> so the film posters do the work, one featured film per screen with a red glow, and a fixed bottom navigation within thumb reach.",
-      "mt.ch3.p":
-        "I learned to work with frames, components and prototypes in Figma, and saw how <strong>small choices in spacing, typography and colour</strong> make an interface clearer.",
       "next.lead1":
         "NEXT is a practical day programme for young people aged 13 to 19 who are (temporarily) stuck at school or at home. They help young people rebuild rhythm, structure and self-confidence, so they can take the step back to school, work or training.",
       "next.lead2":
@@ -433,7 +407,7 @@
       "work.eyebrow": "Projets choisis",
       "work.title": "Projets à la une",
       "work.intro":
-        "Cinq projets qui montrent mon approche, ma recherche et mes choix visuels — de la première idée au site fonctionnel.",
+        "Quatre projets qui montrent mon approche, ma recherche et mes choix visuels — de la première idée au site fonctionnel.",
       "work.next.desc":
         "Site web pour un accueil de jour destiné aux jeunes qui décrochent (temporairement) de l'école — chaleureux, calme et clair pour les jeunes, les parents et les professionnels.",
       "status.live": "En ligne",
@@ -546,32 +520,6 @@
         "Des habitudes avec séries, progression du jour, recherche et modification en ligne, plus un <strong>planning hebdomadaire</strong> pour les cours et activités. Tout est conservé dans le LocalStorage, même après un rafraîchissement.",
       "ht.ch4.p":
         "Comme j'ai réalisé à la fois le design et le code, j'ai pu tester mes idées immédiatement. J'ai appris l'importance des <strong>petites interactions</strong> : un retour clair, de bons états vides et des données qui restent.",
-      "mt.eyebrow":
-        "Projet Figma",
-      "mt.lead1":
-        "Une liste de films pour un cinéma, conçue dans Figma pendant ma première année.",
-      "mt.lead2":
-        "Mon premier projet de design : j'y ai travaillé la <strong>mise en page, la typographie et la couleur</strong>, et testé comment les animations et un prototype donnent vie à une interface.",
-      "mt.open":
-        "Voir le projet Figma →",
-      "mt.type":
-        "Projet scolaire, 1re année",
-      "mt.focus":
-        "Liste de films, design visuel",
-      "mt.status":
-        "Fichier Figma",
-      "mt.ch1":
-        "La mission",
-      "mt.ch2":
-        "Choix de design",
-      "mt.ch3":
-        "Ce que j'ai appris",
-      "mt.ch1.p":
-        "Concevoir une liste de films simple pour un cinéma, avec des <strong>informations claires</strong> et une première impression forte.",
-      "mt.ch2.p":
-        "Une <strong>interface sombre</strong> pour laisser parler les affiches, un film mis en avant par écran avec un halo rouge, et une navigation fixe en bas, à portée de pouce.",
-      "mt.ch3.p":
-        "J'ai appris à travailler avec les frames, composants et prototypes dans Figma, et vu comment de <strong>petits choix d'espacement, de typographie et de couleur</strong> rendent une interface plus claire.",
       "next.lead1":
         "NEXT est un accueil de jour pratique pour les jeunes de 13 à 19 ans qui décrochent (temporairement) à l'école ou à la maison. L'équipe les aide à retrouver un rythme, une structure et la confiance en eux, afin qu'ils puissent reprendre l'école, un travail ou une formation.",
       "next.lead2":

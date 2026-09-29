@@ -22,7 +22,6 @@ python3 -m http.server 8000
 ├── project-s4y.html       # Case study: S4Y (UX/UI / platform)
 ├── project-next.html      # Case study: NEXT (web design / UX/UI)
 ├── project-habit-tracker.html # Case study: Habit Tracker (HTML / CSS / JavaScript)
-├── project-movie-theater.html # Case study: Movie Theater (Figma / UI design)
 ├── style.css              # Shared stylesheet for every page
 ├── script.js              # Shared behaviour for every page
 ├── i18n.js                # Language switch (NL / EN / FR) + English and French texts
