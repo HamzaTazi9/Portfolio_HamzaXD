@@ -1878,6 +1878,12 @@ footer {
   text-transform: uppercase;
 }
 
+/* breathing room when a paragraph follows columns or a list in a chapter */
+.case-columns + p,
+.case-changes + p {
+  margin-top: 1.75rem;
+}
+
 @media (max-width: 768px) {
   .case-media-grid,
   .case-changes li {
