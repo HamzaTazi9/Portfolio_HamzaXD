@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.lel.title">Licht &amp; Liefde — Hamza</title>
+    <meta
+      name="description"
+      content="Case study: toegankelijke website voor Licht &amp; Liefde, een organisatie voor mensen met een visuele beperking. Ontworpen door Hamza."
+      data-i18n-attr="content:meta.lel.desc"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Licht &amp; Liefde — Hamza" />
+    <meta
+      property="og:description"
+      content="Case study: toegankelijke website voor Licht &amp; Liefde, een organisatie voor mensen met een visuele beperking. Ontworpen door Hamza."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo"
+          >Hamza<span class="logo-dot" aria-hidden="true"></span
+          ><span class="logo-frame" aria-hidden="true"
+            ><i></i><i></i><i></i><i></i><b class="guide guide-top"></b
+            ><b class="guide guide-bottom"></b><b class="guide guide-left"></b
+            ><b class="guide guide-right"></b></span
+        ></a>
+        <div class="nav-actions">
+          <div
+            class="lang-switch"
+            role="group"
+            aria-label="Taal / Language / Langue"
+          >
+            <button type="button" data-lang="nl" aria-pressed="true">NL</button>
+            <button type="button" data-lang="en" aria-pressed="false">
+              EN
+            </button>
+            <button type="button" data-lang="fr" aria-pressed="false">
+              FR
+            </button>
+          </div>
+          <a href="projecten.html" class="nav-back" data-i18n="nav.back"
+            >← Alle projecten</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="case-hero">
+      <div class="work-head-top">
+        <span class="work-eyebrow" data-i18n="case.eyebrow">Case study</span>
+        <span class="work-count">04 / 05</span>
+      </div>
+      <h1 class="case-title">Licht &amp; Liefde</h1>
+
+      <div class="case-intro">
+        <div class="case-lead">
+          <p data-i18n="lel.lead1">
+            Licht &amp; Liefde ondersteunt mensen met een visuele beperking in
+            hun dagelijks leven, zodat ze zelfstandig kunnen functioneren.
+          </p>
+          <p data-i18n="lel.lead2">
+            Met een team van drie
+            <strong>herwerkten we de structuur en het ontwerp van de website</strong>
+            voor slechtziende bezoekers: van een analyse van de huidige site en
+            card sorting tot een nieuwe navigatie en een klikbaar prototype.
+          </p>
+          <div class="hero-buttons">
+            <a href="#prototype" class="cta-button" data-i18n="lel.proto.cta"
+              >Bekijk het prototype →</a
+            >
+            <a
+              href="projecten.html"
+              class="button-secondary"
+              data-i18n="case.back"
+              >Terug naar portfolio</a
+            >
+          </div>
+        </div>
+
+        <dl class="case-meta">
+          <div>
+            <dt data-i18n="case.team">Team</dt>
+            <dd>Selena, Ono &amp; Hamza</dd>
+          </div>
+          <div>
+            <dt data-i18n="case.discipline">Discipline</dt>
+            <dd data-i18n="lel.discipline">UX/UI, toegankelijkheid</dd>
+          </div>
+          <div>
+            <dt data-i18n="case.designed">Ontworpen in</dt>
+            <dd>Figma</dd>
+          </div>
+          <div>
+            <dt data-i18n="case.status">Status</dt>
+            <dd><span class="work-status">Prototype</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <figure class="case-media">
+        <img
+          src="assets/licht-en-liefde-home.jpg"
+          alt="Hero van de Licht &amp; Liefde-homepage"
+          data-i18n-attr="alt:lel.alt"
+        />
+      </figure>
+    </section>
+
+    <section class="reveal">
+      <div class="case-chapters">
+        <div class="case-chapter">
+          <span class="case-chapter-num">01</span>
+          <h2 data-i18n="lel.asis">De huidige website</h2>
+          <div class="case-chapter-body">
+            <p data-i18n="lel.asis.p">We startten met een <strong>sitemap van de bestaande website</strong>. Die bleek diep en ingedeeld per doelgroep in plaats van per onderwerp. Doneren had geen eigen plek in het menu en contactgegevens stonden verspreid over meerdere pagina's.</p>
+          </div>
+        </div>
+
+        <div class="case-chapter">
+          <span class="case-chapter-num">02</span>
+          <h2 data-i18n="lel.cs">Card sorting</h2>
+          <div class="case-chapter-body">
+            <p data-i18n="lel.cs.p">Met een <strong>open card sorting</strong> — 33 kaartjes, drie testers — keken we hoe bezoekers de inhoud zelf zouden groeperen.</p>
+            <div class="case-columns">
+              <div>
+                <h3 data-i18n="lel.cs1">Wat overeenkwam</h3>
+                <p data-i18n="lel.cs1.d">Over de organisatie, hulp &amp; diensten, activiteiten en steunen vormden telkens een eigen groep.</p>
+              </div>
+              <div>
+                <h3 data-i18n="lel.cs2">Wat verwarde</h3>
+                <p data-i18n="lel.cs2.d">Begrippen als „Toegang tot expertise”, „Inleefervaring” en „Educatieve koffers” waren onbekend en moeilijk te plaatsen.</p>
+              </div>
+              <div>
+                <h3 data-i18n="lel.cs3">Wat opviel</h3>
+                <p data-i18n="lel.cs3.d">„Een zoekbalk zou handig zijn op elke pagina.”</p>
+              </div>
+            </div>
+            <figure class="case-media">
+              <a href="assets/licht-en-liefde-cardsorting.jpg" target="_blank" rel="noopener"
+                ><img
+                  src="assets/licht-en-liefde-cardsorting.jpg"
+                  alt="Card sorting in FigJam: 33 kaartjes gegroepeerd in Over de organisatie, Diensten en ondersteuning, Activiteiten en beleven, Steunen, Algemene informatie, Nieuws en verhalen en Juridisch"
+                  loading="lazy"
+                  data-i18n-attr="alt:lel.cs.alt"
+              /></a>
+              <figcaption data-i18n="lel.cs.cap">Mijn card sorting in FigJam</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="case-chapter">
+          <span class="case-chapter-num">03</span>
+          <h2 data-i18n="lel.nav">Navigatiestructuur</h2>
+          <div class="case-chapter-body">
+            <p data-i18n="lel.nav.p">Op basis van de card sorting bouwden we een nieuwe structuur met <strong>zes hoofdonderdelen</strong>: Home, Over ons, Hulp &amp; Diensten, Activiteiten, Steunen en Contact — met een zoekbalk op elke pagina.</p>
+            <ul class="case-changes">
+              <li class="case-changes-head" aria-hidden="true">
+                <span data-i18n="lel.nav.before">Huidige website</span>
+                <span data-i18n="lel.nav.after">Nieuwe structuur</span>
+              </li>
+              <li>
+                <span data-i18n="lel.nav.s1">Menu ingedeeld per doelgroep.</span>
+                <span data-i18n="lel.nav.c1">Menu ingedeeld per onderwerp, zodat iedereen dezelfde weg volgt.</span>
+              </li>
+              <li>
+                <span data-i18n="lel.nav.s2">Een diepe structuur met veel lagen.</span>
+                <span data-i18n="lel.nav.c2">Zes hoofditems met overzichtelijke subpagina's.</span>
+              </li>
+              <li>
+                <span data-i18n="lel.nav.s3">Doneren zat verstopt.</span>
+                <span data-i18n="lel.nav.c3">Een eigen hoofditem Steunen: doneren, schenken, sponsoring en vrijwilligerswerk.</span>
+              </li>
+              <li>
+                <span data-i18n="lel.nav.s4">Contactgegevens op meerdere pagina's.</span>
+                <span data-i18n="lel.nav.c4">Eén Contact-pagina met formulier, FAQ en kaart.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="case-chapter" id="prototype">
+          <span class="case-chapter-num">04</span>
+          <h2 data-i18n="next.hifi">Prototype</h2>
+          <div class="case-chapter-body">
+            <p data-i18n="next.hifi.p">Het uitgewerkte ontwerp in <strong>Figma</strong>. Klik zelf door het prototype.</p>
+            <div class="figma-embed-frame case-embed">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="800"
+                height="450"
+                src="https://embed.figma.com/proto/q2G1KUc6VUTjCtJLuqAf8h/UCD2---Prototype?node-id=333-962&amp;viewport=958%2C-419%2C0.1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=333%3A1058&amp;page-id=333%3A961&amp;embed-host=share"
+                title="Licht &amp; Liefde prototype in Figma"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-chapter">
+          <span class="case-chapter-num">05</span>
+          <h2 data-i18n="lel.test">User tests</h2>
+          <div class="case-chapter-body">
+            <p data-i18n="lel.test.p1">Onze hypothese: bezoekers begrijpen zonder uitleg wat Licht &amp; Liefde aanbiedt en vinden <strong>binnen één à twee minuten</strong> hun weg naar hulp, activiteiten, doneren of contact.</p>
+            <p data-i18n="lel.test.p2">We testten het prototype met <strong>vijf deelnemers</strong>, één op één en met think-aloud, in zes taken: eerste indruk, hulp zoeken, je inschrijven voor een activiteit, doneren, contact opnemen en terug naar home. We wisselden telkens af als moderator en observator, en verzamelden alle observaties en quotes per taak op één notitiebord.</p>
+            <figure class="case-media">
+              <a href="assets/licht-en-liefde-usertests.jpg" target="_blank" rel="noopener"
+                ><img
+                  src="assets/licht-en-liefde-usertests.jpg"
+                  alt="Notitiebord van de user tests: per tester een rij en per taak een kolom met observaties en quotes"
+                  loading="lazy"
+                  data-i18n-attr="alt:lel.test.alt"
+              /></a>
+              <figcaption data-i18n="lel.test.cap">Notitiebord: observaties per tester en per taak</figcaption>
+            </figure>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-next reveal">
+      <a class="work-item" href="project-sitr.html">
+        <span class="work-index" data-i18n="case.next">Volgend</span>
+        <div class="work-main">
+          <h2 class="work-title">SITR</h2>
+          <p class="work-desc" data-i18n="next.nextdesc">
+            Branding en web design — case study volgt binnenkort.
+          </p>
+        </div>
+        <span class="work-arrow" aria-hidden="true"
+          ><svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M7 17 17 7M9 7h8v8"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="square"
+            /></svg
+        ></span>
+      </a>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo"
+          >Hamza<span class="logo-dot" aria-hidden="true"></span
+        ></a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="projecten.html" data-i18n="nav.projects">Projecten</a>
+          <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
+          <a href="index.html#over" data-i18n="nav.about">Over mij</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <p class="footer-copy">&copy; 2026 Hamza</p>
+        <a href="#" class="footer-top"
+          ><span data-i18n="footer.top">Terug naar boven</span>
+          <span aria-hidden="true">↑</span></a
+        >
+      </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

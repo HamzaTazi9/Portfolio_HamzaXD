@@ -112,6 +112,8 @@ html {
    refresh, shown still when moving between pages */
 .logo {
   position: relative;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .logo-frame {
@@ -284,9 +286,10 @@ html {
   }
 }
 
-/* the guides run to the edge of the screen; don't let them cause sideways scroll */
+/* the guides run to the edge of the screen; don't let them cause sideways
+   scroll (hidden, not clip: older iOS Safari ignores overflow-x: clip) */
 #navbar {
-  overflow-x: clip;
+  overflow: hidden;
 }
 
 .nav-links {
@@ -1464,6 +1467,15 @@ footer {
   display: block;
 }
 
+/* Wide hero screenshot: show it whole on its own navy so the band blends in */
+.work-media-clip.lel-media {
+  background: #222b4c;
+}
+
+.work-media-clip.lel-media img {
+  object-fit: contain;
+}
+
 .work-item:hover .work-media img,
 .work-item:hover .work-media .coming-soon-visual {
   transform: scale(1.06);
@@ -1768,6 +1780,9 @@ footer {
   line-height: 1.1;
   letter-spacing: -0.03em;
   color: var(--text);
+  /* long Dutch compounds ("Navigatiestructuur") on narrow phones */
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .case-chapter-body > p {
@@ -2144,18 +2159,65 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .nav-container {
+    padding: 1rem 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
   .nav-actions {
-    gap: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .lang-switch {
+    gap: 0;
   }
 
   .nav-actions .cta-button {
-    padding: 0.7rem 1rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-actions {
+    gap: 0.25rem;
+  }
+
+  .lang-switch button {
+    padding: 0.35rem 0.25rem;
+  }
+
+  .lang-switch button::after {
+    left: 0.25rem;
+    right: 0.25rem;
+  }
+
+  /* room for the logo's selection frame, which sticks out to the right */
+  .logo {
+    margin-right: 0.75rem;
+  }
+
+  .nav-back {
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+  }
+
+  .nav-actions .cta-button {
+    padding: 0.6rem 0.6rem;
   }
 }
 
 /* keep the nav on one line; the section links make room below 1000px */
 .nav-links a,
-.nav-actions .cta-button {
+.nav-actions .cta-button,
+.nav-back {
   white-space: nowrap;
 }
 
