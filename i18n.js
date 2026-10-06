@@ -114,7 +114,7 @@
       "work.more.desc":
         "I'm working on new projects. More work will appear here soon.",
       "status.progress": "In progress",
-      "skills.title": "From idea to<br />working website",
+      "skills.title": "Three hats,<br />one head",
       "skills.intro":
         "My skills follow the same process as my work: first understand, then design, then build.",
       "skills.think.label": "01 — UX Research",
@@ -463,7 +463,7 @@
       "work.more.desc":
         "Je travaille sur de nouveaux projets. D'autres réalisations arriveront bientôt ici.",
       "status.progress": "En cours",
-      "skills.title": "De l'idée au<br />site fonctionnel",
+      "skills.title": "Trois casquettes,<br />une seule tête",
       "skills.intro":
         "Mes compétences suivent le même processus que mon travail : d'abord comprendre, puis concevoir, puis construire.",
       "skills.think.label": "01 — Recherche UX",
