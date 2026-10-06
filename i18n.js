@@ -152,10 +152,9 @@
         "Human Sciences (general secondary)",
       "about.before.d":
         "Psychology, sociology and cultural studies",
-      "contact.status": "Open to internships",
       "contact.title": "Let's work<br />together",
       "contact.intro":
-        "I'm looking for an <strong>internship</strong> and I'm open to <strong>collaborations</strong> with people who want to make something. Got a position, a project or an idea? Feel free to send me a message.",
+        "I'm open to <strong>collaborations</strong> with people who want to make something. Got a project or an idea? Feel free to send me a message.",
       "contact.email": "Email",
       "nav.projects": "Projects",
       "nav.about": "About",
@@ -501,10 +500,9 @@
         "Sciences humaines (enseignement général)",
       "about.before.d":
         "Psychologie, sociologie et sciences culturelles",
-      "contact.status": "Ouvert aux stages",
       "contact.title": "Travaillons<br />ensemble",
       "contact.intro":
-        "Je suis à la recherche d'un <strong>stage</strong> et ouvert aux <strong>collaborations</strong> avec des personnes qui veulent créer quelque chose. Vous avez une place, un projet ou une idée ? N'hésitez pas à m'écrire.",
+        "Je suis ouvert aux <strong>collaborations</strong> avec des personnes qui veulent créer quelque chose. Vous avez un projet ou une idée ? N'hésitez pas à m'écrire.",
       "contact.email": "E-mail",
       "nav.projects": "Projets",
       "nav.about": "À propos",
