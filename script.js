@@ -1,10 +1,11 @@
 const progressBar = document.getElementById("progressBar");
 const navbar = document.getElementById("navbar");
+const heroSection = document.getElementById("hero");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 window.addEventListener("scroll", () => {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
+    const scrolled = (window.scrollY / height) * 100;
 
     if (progressBar) {
         progressBar.style.width = `${scrolled}%`;
@@ -16,28 +17,20 @@ window.addEventListener("scroll", () => {
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (event) {
-        const href = this.getAttribute("href");
-
-        if (!href || href === "#") {
-            return;
-        }
+    anchor.addEventListener("click", (event) => {
+        const href = anchor.getAttribute("href");
+        if (href === "#") return;
 
         const target = document.querySelector(href);
-        if (!target) {
-            return;
-        }
+        if (!target) return;
 
         event.preventDefault();
         target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
 });
 
-// Cursor-reactive spotlight behind the hero statement
-const heroSpotlight = document.getElementById("heroSpotlight");
-const heroSection = document.getElementById("hero");
-
-if (heroSpotlight && heroSection) {
+// Spotlight follows the cursor in the hero
+if (heroSection) {
     heroSection.addEventListener("pointermove", (event) => {
         const rect = heroSection.getBoundingClientRect();
         const x = ((event.clientX - rect.left) / rect.width) * 100;
@@ -47,35 +40,32 @@ if (heroSpotlight && heroSection) {
     });
 }
 
-// Logo selection frame: animated on a fresh visit or a refresh, shown still
-// when moving between pages of the site
-const logoFrame = document.querySelector("#navbar .logo-frame");
+// Logo frame: animate on a new visit or refresh, not when clicking
+// between pages of the site
+const logoFrame = document.querySelector("#navbar .logo-kader");
 
 if (logoFrame) {
     const navigation = performance.getEntriesByType("navigation")[0];
-    let fromThisSite = false;
-    try {
-        fromThisSite = Boolean(document.referrer) && new URL(document.referrer).origin === window.location.origin;
-    } catch (error) {
-        fromThisSite = false;
-    }
     const isRefresh = navigation && navigation.type === "reload";
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const fromThisSite = location.host !== "" && document.referrer.includes(location.host);
 
-    logoFrame.classList.add(!reduce && (isRefresh || !fromThisSite) ? "is-animating" : "is-static");
+    if (!reduceMotion && (isRefresh || !fromThisSite)) {
+        logoFrame.classList.add("is-animating");
+    } else {
+        logoFrame.classList.add("is-static");
+    }
 }
 
-// Section header lines draw in (orange → black) the first time they scroll
-// into view
-const headLines = document.querySelectorAll(".work-head-top");
+// Section header lines draw in when they scroll into view
+const headLines = document.querySelectorAll(".sectie-kop-boven");
 
-if (headLines.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+if (!reduceMotion) {
     const headLineObserver = new IntersectionObserver(
-        (entries, observer) => {
+        (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("is-drawn");
-                    observer.unobserve(entry.target);
+                    entry.target.classList.add("getekend");
+                    headLineObserver.unobserve(entry.target);
                 }
             });
         },
@@ -83,97 +73,93 @@ if (headLines.length && !window.matchMedia("(prefers-reduced-motion: reduce)").m
     );
 
     headLines.forEach((line) => {
-        line.classList.add("will-draw");
-        // selection handles at both ends of the line
-        ["start", "end"].forEach((side) => {
-            const handle = document.createElement("i");
-            handle.className = `head-handle head-handle-${side}`;
-            handle.setAttribute("aria-hidden", "true");
-            line.append(handle);
-        });
+        line.classList.add("nog-tekenen");
+        line.insertAdjacentHTML(
+            "beforeend",
+            '<i class="lijn-hoekje lijn-hoekje-begin" aria-hidden="true"></i>' +
+                '<i class="lijn-hoekje lijn-hoekje-eind" aria-hidden="true"></i>'
+        );
         headLineObserver.observe(line);
     });
 }
 
-// Hero intro: "Denk het." is sketched as an outline, "Ontwerp het." gets a
-// Figma-style selection frame with its size, "Bouw het." is typed out
-const introHero = document.getElementById("hero");
-const reduceIntroMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+// Hero intro: think -> design -> build, each step adds a class to #hero
+// and the CSS does the animation
+const designLine = document.querySelector('#hero [data-stage="design"] .regel-tekst');
+const buildLine = document.querySelector('#hero [data-stage="build"] .regel-tekst');
 
-if (introHero && !reduceIntroMotion) {
-    const designLine = introHero.querySelector('[data-stage="design"] .line-inner');
-    const buildLine = introHero.querySelector('[data-stage="build"] .line-inner');
-    const frameLabel = introHero.querySelector(".design-frame b");
+if (designLine && buildLine && !reduceMotion) {
+    const frameLabel = heroSection.querySelector(".ontwerp-kader b");
+    // type into the span with data-i18n so the language switch still works
+    const buildTarget = buildLine.querySelector("[data-i18n]") || buildLine;
+    const buildText = buildTarget.textContent;
+    buildTarget.textContent = "";
+    buildLine.insertAdjacentHTML("beforeend", '<span class="typ-cursor" aria-hidden="true"></span>');
 
-    if (designLine && buildLine) {
-        // type into the translatable span so the language switch keeps working
-        const buildTarget = buildLine.querySelector("[data-i18n]") || buildLine;
-        const buildText = buildTarget.textContent;
-        const caret = document.createElement("span");
-        caret.className = "type-caret";
-        caret.setAttribute("aria-hidden", "true");
-        buildTarget.textContent = "";
-        buildLine.append(caret);
+    heroSection.classList.add("is-animating");
 
-        introHero.classList.add("is-animating");
+    const steps = [
+        [50, "role-in"],
+        [150, "think-sketch"],
+        [1000, "think-fill"],
+        [1300, "design-select"],
+        [2000, "design-fill"],
+        [2400, "design-done"],
+    ];
+    const typeSpeed = 70;
+    const typeEnd = 2400 + buildText.length * typeSpeed;
+    steps.push([typeEnd + 100, "intro-in"], [typeEnd + 600, "build-done"]);
 
-        const timers = [];
-        const at = (ms, fn) => timers.push(setTimeout(fn, ms));
-        const step = (name) => introHero.classList.add(name);
-        const typeSpeed = 70;
-        const allSteps = ["role-in", "think-sketch", "think-fill", "design-select", "design-fill", "design-done", "intro-in", "build-done"];
-
-        at(50, () => step("role-in"));
-        at(150, () => step("think-sketch"));
-        at(1000, () => step("think-fill"));
-        at(1300, () => {
+    // show the size of "Ontwerp het." in the selection frame, measured just
+    // before the frame appears
+    const timers = [
+        setTimeout(() => {
             if (frameLabel) {
                 const { width, height } = designLine.getBoundingClientRect();
                 frameLabel.textContent = `${Math.round(width)} × ${Math.round(height)}`;
             }
-            step("design-select");
-        });
-        at(2000, () => step("design-fill"));
-        at(2400, () => {
-            step("design-done");
-            [...buildText].forEach((char, i) => {
-                at(i * typeSpeed, () => {
-                    buildTarget.textContent += char;
-                });
-            });
-            at(buildText.length * typeSpeed + 100, () => step("intro-in"));
-            at(buildText.length * typeSpeed + 600, () => step("build-done"));
-        });
+        }, 1300),
+    ];
 
-        // switching language mid-intro: jump straight to the end state
-        document.addEventListener("languagechange", () => {
-            timers.forEach(clearTimeout);
-            allSteps.forEach(step);
-        });
-    }
+    steps.forEach(([ms, name]) => {
+        timers.push(setTimeout(() => heroSection.classList.add(name), ms));
+    });
+
+    // type "Bouw het." letter by letter
+    [...buildText].forEach((char, i) => {
+        timers.push(setTimeout(() => (buildTarget.textContent += char), 2400 + i * typeSpeed));
+    });
+
+    // switching language mid-intro: skip to the end
+    document.addEventListener("languagechange", () => {
+        timers.forEach(clearTimeout);
+        steps.forEach(([, name]) => heroSection.classList.add(name));
+    });
 }
 
-// Hero "design canvas": the grid cell under the cursor gets a selection
-// outline with handles, leaves a fading trail of orange squares and shows
-// its coordinates in a Figma-style label
-const heroCanvas = document.getElementById("heroCanvas");
-const heroCursorLabel = document.getElementById("heroCursorLabel");
+// Hero grid: the cell under the cursor gets an orange outline, the cells
+// you leave fade out, and a label shows the X/Y position
+const heroCanvas = document.getElementById("heroTekenvlak");
+const heroCursorLabel = document.getElementById("heroPositie");
 
 if (heroCanvas && heroSection && window.matchMedia("(hover: hover)").matches) {
     const ctx = heroCanvas.getContext("2d");
     const CELL = 64;
     const FADE_MS = 900;
     const HANDLE = 5;
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const trail = new Map();
-    let current = null;
+    let trail = []; // cells you left: { col, row, time }
+    let current = null; // cell under the cursor: { col, row }
     let frame = null;
+
+    // only one draw per animation frame
+    const requestDraw = () => {
+        if (!frame) frame = requestAnimationFrame(draw);
+    };
 
     const resize = () => {
         const dpr = window.devicePixelRatio || 1;
-        const { width, height } = heroSection.getBoundingClientRect();
-        heroCanvas.width = Math.round(width * dpr);
-        heroCanvas.height = Math.round(height * dpr);
+        heroCanvas.width = heroSection.offsetWidth * dpr;
+        heroCanvas.height = heroSection.offsetHeight * dpr;
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
         requestDraw();
     };
@@ -183,17 +169,15 @@ if (heroCanvas && heroSection && window.matchMedia("(hover: hover)").matches) {
         const now = performance.now();
         ctx.clearRect(0, 0, heroCanvas.width, heroCanvas.height);
 
-        trail.forEach((time, key) => {
-            const alpha = 1 - (now - time) / FADE_MS;
-            if (alpha <= 0) {
-                trail.delete(key);
-                return;
-            }
-            const [col, row] = key.split(",").map(Number);
+        // fading trail
+        trail = trail.filter((cell) => now - cell.time < FADE_MS);
+        trail.forEach((cell) => {
+            const alpha = 1 - (now - cell.time) / FADE_MS;
             ctx.fillStyle = `rgba(255, 107, 0, ${alpha * 0.12})`;
-            ctx.fillRect(col * CELL + 1, row * CELL + 1, CELL - 1, CELL - 1);
+            ctx.fillRect(cell.col * CELL + 1, cell.row * CELL + 1, CELL - 1, CELL - 1);
         });
 
+        // outline + four corner handles
         if (current) {
             const x = current.col * CELL + 0.5;
             const y = current.row * CELL + 0.5;
@@ -202,40 +186,34 @@ if (heroCanvas && heroSection && window.matchMedia("(hover: hover)").matches) {
             ctx.strokeRect(x, y, CELL, CELL);
 
             ctx.fillStyle = "#ffffff";
-            [
-                [x, y],
-                [x + CELL, y],
-                [x, y + CELL],
-                [x + CELL, y + CELL],
-            ].forEach(([hx, hy]) => {
-                ctx.fillRect(hx - HANDLE / 2, hy - HANDLE / 2, HANDLE, HANDLE);
-                ctx.strokeRect(hx - HANDLE / 2, hy - HANDLE / 2, HANDLE, HANDLE);
-            });
+            for (const hx of [x, x + CELL]) {
+                for (const hy of [y, y + CELL]) {
+                    ctx.fillRect(hx - HANDLE / 2, hy - HANDLE / 2, HANDLE, HANDLE);
+                    ctx.strokeRect(hx - HANDLE / 2, hy - HANDLE / 2, HANDLE, HANDLE);
+                }
+            }
         }
 
-        if (trail.size) {
+        // keep drawing until the trail has faded
+        if (trail.length) {
             requestDraw();
         }
     };
 
-    function requestDraw() {
-        if (!frame) {
-            frame = requestAnimationFrame(draw);
+    const leaveCell = () => {
+        if (current && !reduceMotion) {
+            trail.push({ ...current, time: performance.now() });
         }
-    }
+    };
 
     heroSection.addEventListener("pointermove", (event) => {
         const rect = heroSection.getBoundingClientRect();
         const col = Math.floor((event.clientX - rect.left) / CELL);
         const row = Math.floor((event.clientY - rect.top) / CELL);
 
-        if (current && current.col === col && current.row === row) {
-            return;
-        }
+        if (current && current.col === col && current.row === row) return;
 
-        if (current && !reduceMotion) {
-            trail.set(`${current.col},${current.row}`, performance.now());
-        }
+        leaveCell();
         current = { col, row };
 
         if (heroCursorLabel) {
@@ -248,43 +226,31 @@ if (heroCanvas && heroSection && window.matchMedia("(hover: hover)").matches) {
     });
 
     heroSection.addEventListener("pointerleave", () => {
-        if (current && !reduceMotion) {
-            trail.set(`${current.col},${current.row}`, performance.now());
-        }
+        leaveCell();
         current = null;
-        heroCursorLabel?.classList.remove("is-visible");
+        if (heroCursorLabel) heroCursorLabel.classList.remove("is-visible");
         requestDraw();
     });
 
     new ResizeObserver(resize).observe(heroSection);
 }
 
-// "Ik ben een ..." rotating word carousel in the About section
-const wordRotator = document.getElementById("wordRotator");
+// "Ik ben een ..." rotating words in the About section
+const words = document.querySelectorAll("#woordenWissel .woord");
+let activeIndex = 0;
 
-if (wordRotator) {
-    const words = Array.from(wordRotator.querySelectorAll(".word"));
-    let activeIndex = words.findIndex((word) => word.classList.contains("is-active"));
-    if (activeIndex === -1) activeIndex = 0;
+if (words.length > 1) {
+    setInterval(() => {
+        const current = words[activeIndex];
+        activeIndex = (activeIndex + 1) % words.length;
+        const next = words[activeIndex];
 
-    if (words.length > 1) {
-        setInterval(() => {
-            const current = words[activeIndex];
-            const nextIndex = (activeIndex + 1) % words.length;
-            const next = words[nextIndex];
+        current.classList.remove("is-active");
+        current.classList.add("is-leaving");
+        next.classList.add("is-active");
 
-            current.classList.add("is-leaving");
-            current.classList.remove("is-active");
-
-            next.classList.add("is-active");
-
-            setTimeout(() => {
-                current.classList.remove("is-leaving");
-            }, 500);
-
-            activeIndex = nextIndex;
-        }, 2400);
-    }
+        setTimeout(() => current.classList.remove("is-leaving"), 500);
+    }, 2400);
 }
 
 function reveal() {

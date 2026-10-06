@@ -32,10 +32,10 @@
       <div class="nav-container">
         <a href="index.html" class="logo"
           >Hamza<span class="logo-dot" aria-hidden="true"></span
-          ><span class="logo-frame" aria-hidden="true"
-            ><i></i><i></i><i></i><i></i><b class="guide guide-top"></b
-            ><b class="guide guide-bottom"></b><b class="guide guide-left"></b
-            ><b class="guide guide-right"></b></span
+          ><span class="logo-kader" aria-hidden="true"
+            ><i></i><i></i><i></i><i></i><b class="hulplijn hulplijn-boven"></b
+            ><b class="hulplijn hulplijn-onder"></b><b class="hulplijn hulplijn-links"></b
+            ><b class="hulplijn hulplijn-rechts"></b></span
         ></a>
         <div class="nav-actions">
           <div
@@ -59,9 +59,9 @@
     </nav>
 
     <section class="case-hero">
-      <div class="work-head-top">
-        <span class="work-eyebrow" data-i18n="case.eyebrow">Case study</span>
-        <span class="work-count">03 / 05</span>
+      <div class="sectie-kop-boven">
+        <span class="sectie-label" data-i18n="case.eyebrow">Case study</span>
+        <span class="project-teller">03 / 05</span>
       </div>
       <h1 class="case-title">S4Y</h1>
 
@@ -71,7 +71,7 @@
           <div class="hero-buttons">
             <a
               href="https://cameras-seven.vercel.app/"
-              class="cta-button"
+              class="knop"
               target="_blank"
               rel="noopener"
               data-i18n="next.live"
@@ -79,7 +79,7 @@
             >
             <a
               href="projecten.html"
-              class="button-secondary"
+              class="knop-rand"
               data-i18n="case.back"
               >Terug naar portfolio</a
             >
@@ -106,7 +106,7 @@
           <div>
             <dt data-i18n="case.website">Website</dt>
             <dd>
-              <span class="work-status is-live" data-i18n="status.live">Live</span>
+              <span class="status-label is-live" data-i18n="status.live">Live</span>
             </dd>
           </div>
         </dl>
@@ -226,15 +226,15 @@
     </section>
 
     <section class="case-next reveal">
-      <a class="work-item" href="project-licht-en-liefde.html">
-        <span class="work-index" data-i18n="case.next">Volgend</span>
-        <div class="work-main">
-          <h2 class="work-title">Licht &amp; Liefde</h2>
-          <p class="work-desc" data-i18n="s4y.nextdesc">
+      <a class="project-item" href="project-licht-en-liefde.html">
+        <span class="project-nummer" data-i18n="case.next">Volgend</span>
+        <div class="project-tekst">
+          <h2 class="project-titel">Licht &amp; Liefde</h2>
+          <p class="project-uitleg" data-i18n="s4y.nextdesc">
             Toegankelijke website voor slechtziende gebruikers — prototype.
           </p>
         </div>
-        <span class="work-arrow" aria-hidden="true"
+        <span class="pijl" aria-hidden="true"
           ><svg viewBox="0 0 24 24" fill="none">
             <path
               d="M7 17 17 7M9 7h8v8"
@@ -257,7 +257,7 @@
           <a href="index.html#over" data-i18n="nav.about">Over mij</a>
           <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
         </nav>
-        <p class="footer-copy">&copy; 2026 Hamza</p>
+        <p class="footer-copyright">&copy; 2026 Hamza</p>
         <a href="#" class="footer-top"
           ><span data-i18n="footer.top">Terug naar boven</span>
           <span aria-hidden="true">↑</span></a
@@ -265,6 +265,10 @@
       </div>
     </footer>
 
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
     <script src="i18n.js"></script>
     <script src="script.js"></script>
   </body>

@@ -37,10 +37,10 @@
       <div class="nav-container">
         <a href="#" class="logo"
           >Hamza<span class="logo-dot" aria-hidden="true"></span
-          ><span class="logo-frame" aria-hidden="true"
-            ><i></i><i></i><i></i><i></i><b class="guide guide-top"></b
-            ><b class="guide guide-bottom"></b><b class="guide guide-left"></b
-            ><b class="guide guide-right"></b></span
+          ><span class="logo-kader" aria-hidden="true"
+            ><i></i><i></i><i></i><i></i><b class="hulplijn hulplijn-boven"></b
+            ><b class="hulplijn hulplijn-onder"></b><b class="hulplijn hulplijn-links"></b
+            ><b class="hulplijn hulplijn-rechts"></b></span
         ></a>
         <ul class="nav-links">
           <li><a href="#projecten" data-i18n="nav.projects">Projecten</a></li>
@@ -62,7 +62,7 @@
               FR
             </button>
           </div>
-          <a href="#contact" class="cta-button" data-i18n="nav.cta"
+          <a href="#contact" class="knop" data-i18n="nav.cta"
             >Laten we praten</a
           >
         </div>
@@ -70,55 +70,55 @@
     </nav>
 
     <section class="hero" id="hero">
-      <div class="hero-spotlight" id="heroSpotlight"></div>
-      <div class="hero-grid"></div>
-      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-licht" id="heroLicht"></div>
+      <div class="hero-raster"></div>
+      <canvas class="hero-tekenvlak" id="heroTekenvlak" aria-hidden="true"></canvas>
       <span
-        class="hero-cursor-label"
-        id="heroCursorLabel"
+        class="hero-positie"
+        id="heroPositie"
         aria-hidden="true"
       ></span>
 
-      <div class="hero-statement">
-        <p class="hero-role">
+      <div class="hero-tekst">
+        <p class="hero-rol">
           <span>Designer</span>
-          <span class="hero-role-plus" aria-hidden="true">+</span>
+          <span class="hero-rol-plus" aria-hidden="true">+</span>
           <span data-i18n="hero.role.dev">Developer</span>
         </p>
         <h1
-          class="statement-lines"
+          class="slogan"
           aria-label="Denk het. Ontwerp het. Bouw het."
           data-i18n-attr="aria-label:hero.aria"
         >
-          <span class="statement-line" data-stage="think"
-            ><span class="line-inner"
+          <span class="slogan-regel" data-stage="think"
+            ><span class="regel-tekst"
               ><span data-i18n="hero.think">Denk het.</span></span
             ></span
           >
-          <span class="statement-line" data-stage="design"
-            ><span class="line-inner"
+          <span class="slogan-regel" data-stage="design"
+            ><span class="regel-tekst"
               ><span data-i18n="hero.design">Ontwerp het.</span
-              ><span class="design-frame" aria-hidden="true"
+              ><span class="ontwerp-kader" aria-hidden="true"
                 ><i></i><i></i><i></i><i></i><b></b></span></span
           ></span>
-          <span class="statement-line" data-stage="build"
-            ><span class="line-inner"
+          <span class="slogan-regel" data-stage="build"
+            ><span class="regel-tekst"
               ><span data-i18n="hero.build">Bouw het.</span></span
             ></span
           >
         </h1>
 
-        <p class="hero-sub" data-i18n="hero.sub">
+        <p class="hero-uitleg" data-i18n="hero.sub">
           Ik ben Hamza — <strong>designer én developer</strong>. Ik ontwerp
           digitale producten en bouw ze daarna zelf, van eerste onderzoek tot
           een werkende website.
         </p>
 
         <div class="hero-buttons">
-          <a href="#projecten" class="cta-button" data-i18n="hero.cta"
+          <a href="#projecten" class="knop" data-i18n="hero.cta"
             >Bekijk mijn werk →</a
           >
-          <a href="#contact" class="button-secondary" data-i18n="hero.contact"
+          <a href="#contact" class="knop-rand" data-i18n="hero.contact"
             >Neem contact op</a
           >
         </div>
@@ -133,9 +133,9 @@
     </section>
 
     <section id="projecten" class="reveal">
-      <div class="work-head">
-        <div class="work-head-top">
-          <span class="work-eyebrow" data-i18n="work.eyebrow"
+      <div class="sectie-kop">
+        <div class="sectie-kop-boven">
+          <span class="sectie-label" data-i18n="work.eyebrow"
             >Geselecteerd werk</span
           >
         </div>
@@ -146,29 +146,29 @@
         </p>
       </div>
 
-      <div class="work-list">
-        <a class="work-item" href="project-next.html">
-          <span class="work-index">01</span>
-          <div class="work-main">
-            <h3 class="work-title">NEXT</h3>
-            <p class="work-desc" data-i18n="work.next.desc">
+      <div class="project-lijst">
+        <a class="project-item" href="project-next.html">
+          <span class="project-nummer">01</span>
+          <div class="project-tekst">
+            <h3 class="project-titel">NEXT</h3>
+            <p class="project-uitleg" data-i18n="work.next.desc">
               Website voor een dagbesteding voor jongeren die (even) vastlopen
               met school — warm, rustig en helder voor jongeren, ouders en
               professionals.
             </p>
           </div>
-          <div class="work-meta">
-            <span class="work-status is-live" data-i18n="status.live"
+          <div class="project-info">
+            <span class="status-label is-live" data-i18n="status.live"
               >Live</span
             >
-            <ul class="work-tags">
+            <ul class="project-tags">
               <li>Figma</li>
               <li>UX/UI</li>
               <li>Front-end</li>
             </ul>
           </div>
-          <div class="work-media">
-            <div class="work-media-clip">
+          <div class="project-beeld">
+            <div class="project-beeld-uitsnede">
               <img
                 src="assets/NEXT_home.jpg"
                 alt="NEXT website homepage"
@@ -176,11 +176,11 @@
                 data-i18n-attr="alt:work.next.alt"
               />
             </div>
-            <span class="work-frame" aria-hidden="true"
+            <span class="selectie-kader" aria-hidden="true"
               ><i></i><i></i><i></i><i></i
             ></span>
           </div>
-          <span class="work-arrow" aria-hidden="true">
+          <span class="pijl" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
               <path
                 d="M7 17 17 7M9 7h8v8"
@@ -193,27 +193,27 @@
         </a>
 
         <a
-          class="work-item habit-tracker-item"
+          class="project-item habit-tracker-item"
           href="project-habit-tracker.html"
         >
-          <span class="work-index">02</span>
-          <div class="work-main">
-            <h3 class="work-title">Habit Tracker</h3>
-            <p class="work-desc">
+          <span class="project-nummer">02</span>
+          <div class="project-tekst">
+            <h3 class="project-titel">Habit Tracker</h3>
+            <p class="project-uitleg">
               Een rustige habit tracker voor dagelijkse gewoontes, voortgang en
               planning.
             </p>
           </div>
-          <div class="work-meta">
-            <span class="work-status is-live">Live</span>
-            <ul class="work-tags">
+          <div class="project-info">
+            <span class="status-label is-live">Live</span>
+            <ul class="project-tags">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
           </div>
-          <div class="work-media">
-            <div class="work-media-clip habit-tracker-media">
+          <div class="project-beeld">
+            <div class="project-beeld-uitsnede habit-tracker-media">
               <img
                 src="assets/habit-tracker.jpg"
                 class="habit-tracker-preview"
@@ -221,11 +221,11 @@
                 loading="lazy"
               />
             </div>
-            <span class="work-frame" aria-hidden="true"
+            <span class="selectie-kader" aria-hidden="true"
               ><i></i><i></i><i></i><i></i
             ></span>
           </div>
-          <span class="work-arrow" aria-hidden="true">
+          <span class="pijl" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
               <path
                 d="M7 17 17 7M9 7h8v8"
@@ -237,24 +237,24 @@
           </span>
         </a>
 
-        <a class="work-item" href="project-s4y.html">
-          <span class="work-index">03</span>
-          <div class="work-main">
-            <h3 class="work-title">S4Y</h3>
-            <p class="work-desc" data-i18n="work.s4y.desc">
+        <a class="project-item" href="project-s4y.html">
+          <span class="project-nummer">03</span>
+          <div class="project-tekst">
+            <h3 class="project-titel">S4Y</h3>
+            <p class="project-uitleg" data-i18n="work.s4y.desc">
               Tweetalige website voor een Belgische beveiligingsinstallateur, gebouwd rond een offerteformulier in stappen.
             </p>
           </div>
-          <div class="work-meta">
-            <span class="work-status is-live" data-i18n="status.live">Live</span>
-            <ul class="work-tags">
+          <div class="project-info">
+            <span class="status-label is-live" data-i18n="status.live">Live</span>
+            <ul class="project-tags">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
           </div>
-          <div class="work-media">
-            <div class="work-media-clip">
+          <div class="project-beeld">
+            <div class="project-beeld-uitsnede">
               <img
                 src="assets/s4y-home.jpg"
                 alt="Homepage van de S4Y-website"
@@ -262,11 +262,11 @@
                 data-i18n-attr="alt:s4y.alt"
               />
             </div>
-            <span class="work-frame" aria-hidden="true"
+            <span class="selectie-kader" aria-hidden="true"
               ><i></i><i></i><i></i><i></i
             ></span>
           </div>
-          <span class="work-arrow" aria-hidden="true">
+          <span class="pijl" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
               <path
                 d="M7 17 17 7M9 7h8v8"
@@ -279,17 +279,17 @@
         </a>
       </div>
 
-      <div class="work-all">
-        <a href="projecten.html" class="cta-button" data-i18n="work.all"
+      <div class="alle-projecten">
+        <a href="projecten.html" class="knop" data-i18n="work.all"
           >Bekijk alle projecten →</a
         >
       </div>
     </section>
 
     <section id="skills" class="reveal">
-      <div class="work-head">
-        <div class="work-head-top">
-          <span class="work-eyebrow" data-i18n="nav.skills">Skills</span>
+      <div class="sectie-kop">
+        <div class="sectie-kop-boven">
+          <span class="sectie-label" data-i18n="nav.skills">Skills</span>
         </div>
         <h2 data-i18n="skills.title">Van idee tot<br />werkende website</h2>
         <p data-i18n="skills.intro">
@@ -298,17 +298,17 @@
         </p>
       </div>
 
-      <div class="skill-phases">
-        <div class="skill-phase">
-          <span class="skill-phase-label" data-i18n="skills.think.label"
+      <div class="skill-fases">
+        <div class="skill-fase">
+          <span class="skill-fase-label" data-i18n="skills.think.label"
             >01 — UX Research</span
           >
-          <h3 class="skill-phase-word" data-i18n="skills.think.word">Denk.</h3>
-          <p class="skill-phase-desc" data-i18n="skills.think.desc">
+          <h3 class="skill-fase-woord" data-i18n="skills.think.word">Denk.</h3>
+          <p class="skill-fase-uitleg" data-i18n="skills.think.desc">
             Begrijpen voor wie ik ontwerp en waarom — voordat er één pixel
             staat.
           </p>
-          <ul class="skill-rows">
+          <ul class="skill-lijst">
             <li>User Interviews</li>
             <li>Persona Creation</li>
             <li>Usability Testing</li>
@@ -316,18 +316,18 @@
             <li>A/B Testing</li>
           </ul>
         </div>
-        <div class="skill-phase">
-          <span class="skill-phase-label" data-i18n="skills.design.label"
+        <div class="skill-fase">
+          <span class="skill-fase-label" data-i18n="skills.design.label"
             >02 — UI / UX Design</span
           >
-          <h3 class="skill-phase-word" data-i18n="skills.design.word">
+          <h3 class="skill-fase-woord" data-i18n="skills.design.word">
             Ontwerp.
           </h3>
-          <p class="skill-phase-desc" data-i18n="skills.design.desc">
+          <p class="skill-fase-uitleg" data-i18n="skills.design.desc">
             Ideeën vertalen naar heldere flows, wireframes en uitgewerkte
             interfaces.
           </p>
-          <ul class="skill-rows">
+          <ul class="skill-lijst">
             <li>Figma</li>
             <li>Adobe XD</li>
             <li>Blender</li>
@@ -336,15 +336,15 @@
             <li>Design Systems</li>
           </ul>
         </div>
-        <div class="skill-phase">
-          <span class="skill-phase-label" data-i18n="skills.build.label"
+        <div class="skill-fase">
+          <span class="skill-fase-label" data-i18n="skills.build.label"
             >03 — Development</span
           >
-          <h3 class="skill-phase-word" data-i18n="skills.build.word">Bouw.</h3>
-          <p class="skill-phase-desc" data-i18n="skills.build.desc">
+          <h3 class="skill-fase-woord" data-i18n="skills.build.word">Bouw.</h3>
+          <p class="skill-fase-uitleg" data-i18n="skills.build.desc">
             Het ontwerp met de hand omzetten naar een snelle, werkende website.
           </p>
-          <ul class="skill-rows">
+          <ul class="skill-lijst">
             <li>HTML / CSS</li>
             <li>JavaScript</li>
             <li>PHP</li>
@@ -356,17 +356,17 @@
     </section>
 
     <section id="over" class="reveal">
-      <div class="work-head">
-        <div class="work-head-top">
-          <span class="work-eyebrow" data-i18n="nav.about">Over mij</span>
+      <div class="sectie-kop">
+        <div class="sectie-kop-boven">
+          <span class="sectie-label" data-i18n="nav.about">Over mij</span>
         </div>
-        <h2 class="about-lead">
+        <h2 class="about-titel">
           <span data-i18n="about.lead">Ik ben een</span><br />
-          <span class="word-rotator" id="wordRotator" aria-live="polite">
-            <span class="word is-active" data-i18n="about.w1">UX designer</span>
-            <span class="word" data-i18n="about.w2">front-end developer</span>
-            <span class="word" data-i18n="about.w3">probleemoplosser</span>
-            <span class="word" data-i18n="about.w4">detail-fanaat</span>
+          <span class="woorden-wissel" id="woordenWissel" aria-live="polite">
+            <span class="woord is-active" data-i18n="about.w1">UX designer</span>
+            <span class="woord" data-i18n="about.w2">front-end developer</span>
+            <span class="woord" data-i18n="about.w3">probleemoplosser</span>
+            <span class="woord" data-i18n="about.w4">detail-fanaat</span>
           </span>
         </h2>
       </div>
@@ -386,18 +386,18 @@
             gebruiken.
           </p>
         </div>
-        <ul class="about-path">
+        <ul class="tijdlijn">
           <li>
-            <span class="about-path-when" data-i18n="about.now">Nu</span>
-            <span class="about-path-what">
+            <span class="tijdlijn-wanneer" data-i18n="about.now">Nu</span>
+            <span class="tijdlijn-wat">
               <strong data-i18n="about.now.t">3e jaar Digital Experience Design</strong>
               <span data-i18n="about.now.school">Thomas More, Mechelen</span>
               <span data-i18n="about.now.d">Op zoek naar een stageplek</span>
             </span>
           </li>
           <li>
-            <span class="about-path-when" data-i18n="about.before">Middelbaar</span>
-            <span class="about-path-what">
+            <span class="tijdlijn-wanneer" data-i18n="about.before">Middelbaar</span>
+            <span class="tijdlijn-wat">
               <strong data-i18n="about.before.t">ASO Humane Wetenschappen</strong>
               <span data-i18n="about.before.d">Psychologie, sociologie en cultuurwetenschappen</span>
             </span>
@@ -407,9 +407,9 @@
     </section>
 
     <section id="persoonlijk" class="reveal">
-      <div class="work-head">
-        <div class="work-head-top">
-          <span class="work-eyebrow" data-i18n="life.eyebrow"
+      <div class="sectie-kop">
+        <div class="sectie-kop-boven">
+          <span class="sectie-label" data-i18n="life.eyebrow"
             >Buiten het scherm</span
           >
         </div>
@@ -422,45 +422,45 @@
 
       <div class="life-grid">
         <div class="life-item">
-          <span class="life-num">01</span>
+          <span class="life-nummer">01</span>
           <h3 data-i18n="life.i1.t">Sport & fitness</h3>
           <p data-i18n="life.i1.d">
             Trainen houdt mijn hoofd scherp. In de gym leer ik wat ik ook in
             mijn werk toepas: elke dag een beetje beter.
           </p>
-          <span class="work-frame" aria-hidden="true"
+          <span class="selectie-kader" aria-hidden="true"
             ><i></i><i></i><i></i><i></i
           ></span>
         </div>
         <div class="life-item">
-          <span class="life-num">02</span>
+          <span class="life-nummer">02</span>
           <h3 data-i18n="life.i2.t">Challenges & experimenteren</h3>
           <p data-i18n="life.i2.d">
             Ik zoek graag uitdagingen op en probeer nieuwe dingen liever uit dan
             dat ik er eindeloos over nadenk.
           </p>
-          <span class="work-frame" aria-hidden="true"
+          <span class="selectie-kader" aria-hidden="true"
             ><i></i><i></i><i></i><i></i
           ></span>
         </div>
         <div class="life-item">
-          <span class="life-num">03</span>
+          <span class="life-nummer">03</span>
           <h3 data-i18n="life.i3.t">Series & films</h3>
           <p data-i18n="life.i3.d">
             Sterke verhalen en mooie beelden: daar haal ik vaak inspiratie uit.
           </p>
-          <span class="work-frame" aria-hidden="true"
+          <span class="selectie-kader" aria-hidden="true"
             ><i></i><i></i><i></i><i></i
           ></span>
         </div>
         <div class="life-item">
-          <span class="life-num">04</span>
+          <span class="life-nummer">04</span>
           <h3 data-i18n="life.i4.t">Humor</h3>
           <p data-i18n="life.i4.d">
             Serieus werk, maar niet té serieus. Een goede grap maakt elk team
             beter.
           </p>
-          <span class="work-frame" aria-hidden="true"
+          <span class="selectie-kader" aria-hidden="true"
             ><i></i><i></i><i></i><i></i
           ></span>
         </div>
@@ -472,10 +472,10 @@
     </section>
 
     <section id="contact" class="reveal">
-      <div class="work-head">
-        <div class="work-head-top">
-          <span class="work-eyebrow" data-i18n="nav.contact">Contact</span>
-          <span class="work-status is-live" data-i18n="contact.status"
+      <div class="sectie-kop">
+        <div class="sectie-kop-boven">
+          <span class="sectie-label" data-i18n="nav.contact">Contact</span>
+          <span class="status-label is-live" data-i18n="contact.status"
             >Open voor stage</span
           >
         </div>
@@ -491,7 +491,7 @@
         <a class="contact-row" href="mailto:h.tazi.professional@gmail.com">
           <span class="contact-label" data-i18n="contact.email">Email</span>
           <span class="contact-value">h.tazi.professional@gmail.com</span>
-          <span class="work-arrow" aria-hidden="true"
+          <span class="pijl" aria-hidden="true"
             ><svg viewBox="0 0 24 24" fill="none">
               <path
                 d="M7 17 17 7M9 7h8v8"
@@ -509,7 +509,7 @@
         >
           <span class="contact-label">LinkedIn</span>
           <span class="contact-value">/in/hamza-tazi</span>
-          <span class="work-arrow" aria-hidden="true"
+          <span class="pijl" aria-hidden="true"
             ><svg viewBox="0 0 24 24" fill="none">
               <path
                 d="M7 17 17 7M9 7h8v8"
@@ -527,7 +527,7 @@
         >
           <span class="contact-label">GitHub</span>
           <span class="contact-value">/HamzaTazi9</span>
-          <span class="work-arrow" aria-hidden="true"
+          <span class="pijl" aria-hidden="true"
             ><svg viewBox="0 0 24 24" fill="none">
               <path
                 d="M7 17 17 7M9 7h8v8"
@@ -551,7 +551,7 @@
           <a href="#over" data-i18n="nav.about">Over mij</a>
           <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
-        <p class="footer-copy">&copy; 2026 Hamza</p>
+        <p class="footer-copyright">&copy; 2026 Hamza</p>
         <a href="#" class="footer-top"
           ><span data-i18n="footer.top">Terug naar boven</span>
           <span aria-hidden="true">↑</span></a
@@ -559,6 +559,10 @@
       </div>
     </footer>
 
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
     <script src="i18n.js"></script>
     <script src="script.js"></script>
   </body>

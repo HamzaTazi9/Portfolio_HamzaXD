@@ -116,7 +116,7 @@ html {
   white-space: nowrap;
 }
 
-.logo-frame {
+.logo-kader {
   position: absolute;
   inset: -2px -10px -2px -8px;
   border: 1px solid transparent;
@@ -124,7 +124,7 @@ html {
   opacity: 0;
 }
 
-.logo-frame i {
+.logo-kader i {
   position: absolute;
   z-index: 1;
   width: 7px;
@@ -133,111 +133,111 @@ html {
   border: 1px solid var(--accent);
 }
 
-.logo-frame i:nth-child(1) {
+.logo-kader i:nth-child(1) {
   top: -4px;
   left: -4px;
 }
-.logo-frame i:nth-child(2) {
+.logo-kader i:nth-child(2) {
   top: -4px;
   right: -4px;
 }
-.logo-frame i:nth-child(3) {
+.logo-kader i:nth-child(3) {
   bottom: -4px;
   left: -4px;
 }
-.logo-frame i:nth-child(4) {
+.logo-kader i:nth-child(4) {
   bottom: -4px;
   right: -4px;
 }
 
 /* Figma-style smart guides that fly in and meet at the logo's edges */
-.logo-frame .guide {
+.logo-kader .hulplijn {
   display: none;
   position: absolute;
   background: var(--accent);
 }
 
-.guide-top,
-.guide-bottom {
+.hulplijn-boven,
+.hulplijn-onder {
   left: -1px;
   width: 100vw;
   height: 1px;
 }
 
-.guide-top {
+.hulplijn-boven {
   top: -1px;
 }
-.guide-bottom {
+.hulplijn-onder {
   bottom: -1px;
 }
 
-.guide-left,
-.guide-right {
+.hulplijn-links,
+.hulplijn-rechts {
   top: -26px;
   bottom: -26px;
   width: 1px;
 }
 
-.guide-left {
+.hulplijn-links {
   left: -1px;
 }
-.guide-right {
+.hulplijn-rechts {
   right: -1px;
 }
 
-.logo-frame.is-static {
+.logo-kader.is-static {
   opacity: 1;
   border-color: var(--accent);
 }
 
-.logo-frame.is-animating {
+.logo-kader.is-animating {
   opacity: 1;
   animation: logoFrameBorder 0.2s ease 0.7s forwards;
 }
 
-.logo-frame.is-animating .guide {
+.logo-kader.is-animating .hulplijn {
   display: block;
 }
 
 /* top/bottom sweep in from the right, left from the top, right from the bottom */
-.logo-frame.is-animating .guide-top,
-.logo-frame.is-animating .guide-bottom {
+.logo-kader.is-animating .hulplijn-boven,
+.logo-kader.is-animating .hulplijn-onder {
   animation:
     guideFromRight 0.6s cubic-bezier(0.65, 0, 0.35, 1) 0.15s both,
     guideFade 0.4s ease 0.85s forwards;
 }
 
-.logo-frame.is-animating .guide-bottom {
+.logo-kader.is-animating .hulplijn-onder {
   animation-delay: 0.22s, 0.9s;
 }
 
-.logo-frame.is-animating .guide-left {
+.logo-kader.is-animating .hulplijn-links {
   animation:
     guideFromTop 0.45s cubic-bezier(0.65, 0, 0.35, 1) 0.3s both,
     guideFade 0.4s ease 0.85s forwards;
 }
 
-.logo-frame.is-animating .guide-right {
+.logo-kader.is-animating .hulplijn-rechts {
   animation:
     guideFromBottom 0.45s cubic-bezier(0.65, 0, 0.35, 1) 0.35s both,
     guideFade 0.4s ease 0.9s forwards;
 }
 
-.logo-frame.is-animating i {
+.logo-kader.is-animating i {
   transform: scale(0);
   animation: logoHandleIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
-.logo-frame.is-animating i:nth-child(1) {
+.logo-kader.is-animating i:nth-child(1) {
   animation-delay: 0.95s;
 }
-.logo-frame.is-animating i:nth-child(2) {
+.logo-kader.is-animating i:nth-child(2) {
   animation-delay: 1.02s;
 }
-.logo-frame.is-animating i:nth-child(3) {
+.logo-kader.is-animating i:nth-child(3) {
   animation-delay: 1.09s;
 }
-.logo-frame.is-animating i:nth-child(4) {
+.logo-kader.is-animating i:nth-child(4) {
   animation-delay: 1.16s;
 }
 
@@ -326,7 +326,7 @@ html {
   width: 100%;
 }
 
-.cta-button {
+.knop {
   display: inline-block;
   background: var(--accent);
   border: 1px solid var(--accent);
@@ -340,7 +340,7 @@ html {
     border-color 0.3s ease;
 }
 
-.cta-button:hover {
+.knop:hover {
   background: var(--text);
   border-color: var(--text);
 }
@@ -381,7 +381,7 @@ html {
   }
 }
 
-.hero-spotlight {
+.hero-licht {
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -394,7 +394,7 @@ html {
   transition: background 0.15s ease;
 }
 
-.hero-grid {
+.hero-raster {
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -417,7 +417,7 @@ html {
   padding: calc(8rem + 90px) 2rem 8rem;
 }
 
-.hero-canvas {
+.hero-tekenvlak {
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -426,7 +426,7 @@ html {
   pointer-events: none;
 }
 
-.hero-cursor-label {
+.hero-positie {
   position: absolute;
   top: 0;
   left: 0;
@@ -444,11 +444,11 @@ html {
   transition: opacity 0.2s ease;
 }
 
-.hero-cursor-label.is-visible {
+.hero-positie.is-visible {
   opacity: 1;
 }
 
-.hero-statement {
+.hero-tekst {
   position: relative;
   z-index: 1;
   max-width: calc(1400px - 4rem);
@@ -456,7 +456,7 @@ html {
   width: 100%;
 }
 
-.hero-role {
+.hero-rol {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -468,14 +468,14 @@ html {
   color: var(--text);
 }
 
-.hero-role::before {
+.hero-rol::before {
   content: "";
   width: 8px;
   height: 8px;
   background: var(--accent);
 }
 
-.hero-role-plus {
+.hero-rol-plus {
   color: var(--accent);
 }
 
@@ -523,17 +523,17 @@ html {
   }
 }
 
-.work-head p strong {
+.sectie-kop p strong {
   color: var(--text);
   font-weight: 600;
 }
 
-.hero-sub strong {
+.hero-uitleg strong {
   color: var(--text);
   font-weight: 600;
 }
 
-.statement-lines {
+.slogan {
   font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: -3px;
@@ -542,22 +542,22 @@ html {
   display: block;
 }
 
-.statement-line {
+.slogan-regel {
   display: block;
   font-size: clamp(3rem, 9vw, 6.5rem);
 }
 
-.statement-line .line-inner {
+.slogan-regel .regel-tekst {
   position: relative;
   display: inline-block;
   color: var(--text);
 }
 
-.statement-line[data-stage="design"] .line-inner {
+.slogan-regel[data-stage="design"] .regel-tekst {
   color: var(--accent);
 }
 
-.hero-sub {
+.hero-uitleg {
   font-size: 1.3rem;
   color: var(--text-muted);
   margin-bottom: 3rem;
@@ -568,7 +568,7 @@ html {
 /* ===== Hero intro: Denk (sketch) → Ontwerp (select) → Bouw (type) =====
    The hidden start states only apply once script.js adds .is-animating,
    so without JS or with reduced motion the text is simply visible. */
-.design-frame {
+.ontwerp-kader {
   position: absolute;
   inset: -0.06em -0.14em -0.02em;
   border: 1px solid var(--accent);
@@ -580,7 +580,7 @@ html {
     transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.design-frame i {
+.ontwerp-kader i {
   position: absolute;
   width: 9px;
   height: 9px;
@@ -588,24 +588,24 @@ html {
   border: 1px solid var(--accent);
 }
 
-.design-frame i:nth-child(1) {
+.ontwerp-kader i:nth-child(1) {
   top: -5px;
   left: -5px;
 }
-.design-frame i:nth-child(2) {
+.ontwerp-kader i:nth-child(2) {
   top: -5px;
   right: -5px;
 }
-.design-frame i:nth-child(3) {
+.ontwerp-kader i:nth-child(3) {
   bottom: -5px;
   left: -5px;
 }
-.design-frame i:nth-child(4) {
+.ontwerp-kader i:nth-child(4) {
   bottom: -5px;
   right: -5px;
 }
 
-.design-frame b {
+.ontwerp-kader b {
   position: absolute;
   top: calc(100% + 10px);
   left: 50%;
@@ -623,7 +623,7 @@ html {
   font-variant-numeric: tabular-nums;
 }
 
-.type-caret {
+.typ-cursor {
   display: inline-block;
   width: 0.07em;
   height: 0.82em;
@@ -641,7 +641,7 @@ html {
 }
 
 /* start states */
-.hero.is-animating [data-stage="think"] .line-inner {
+.hero.is-animating [data-stage="think"] .regel-tekst {
   color: transparent;
   -webkit-text-stroke: 1.5px var(--text);
   clip-path: inset(0 100% 0 0);
@@ -651,7 +651,7 @@ html {
     -webkit-text-stroke-color 0.5s ease;
 }
 
-.hero.is-animating [data-stage="design"] .line-inner {
+.hero.is-animating [data-stage="design"] .regel-tekst {
   color: var(--text);
   opacity: 0;
   transition:
@@ -659,8 +659,8 @@ html {
     color 0.5s ease;
 }
 
-.hero.is-animating .hero-role,
-.hero.is-animating .hero-sub,
+.hero.is-animating .hero-rol,
+.hero.is-animating .hero-uitleg,
 .hero.is-animating .hero-buttons,
 .hero.is-animating .hero-status {
   opacity: 0;
@@ -679,39 +679,39 @@ html {
 }
 
 /* steps */
-.hero.think-sketch [data-stage="think"] .line-inner {
+.hero.think-sketch [data-stage="think"] .regel-tekst {
   clip-path: inset(0 -0.2em 0 0);
 }
 
-.hero.think-fill [data-stage="think"] .line-inner {
+.hero.think-fill [data-stage="think"] .regel-tekst {
   color: var(--text);
   -webkit-text-stroke-color: transparent;
 }
 
-.hero.design-select [data-stage="design"] .line-inner {
+.hero.design-select [data-stage="design"] .regel-tekst {
   opacity: 1;
 }
 
-.hero.design-select .design-frame {
+.hero.design-select .ontwerp-kader {
   opacity: 1;
   transform: none;
 }
 
-.hero.design-fill [data-stage="design"] .line-inner {
+.hero.design-fill [data-stage="design"] .regel-tekst {
   color: var(--accent);
 }
 
-.hero.design-done .design-frame {
+.hero.design-done .ontwerp-kader {
   opacity: 0;
 }
 
-.hero.build-done .type-caret {
+.hero.build-done .typ-cursor {
   opacity: 0;
   animation: none;
 }
 
-.hero.is-animating.role-in .hero-role,
-.hero.is-animating.intro-in .hero-sub,
+.hero.is-animating.role-in .hero-rol,
+.hero.is-animating.intro-in .hero-uitleg,
 .hero.is-animating.intro-in .hero-buttons,
 .hero.is-animating.intro-in .hero-status {
   opacity: 1;
@@ -735,7 +735,7 @@ html {
   flex-wrap: wrap;
 }
 
-.button-secondary {
+.knop-rand {
   display: inline-block;
   background: transparent;
   border: 1px solid var(--text);
@@ -747,7 +747,7 @@ html {
   transition: all 0.3s;
 }
 
-.button-secondary:hover {
+.knop-rand:hover {
   border-color: var(--accent);
   color: var(--accent);
 }
@@ -759,23 +759,23 @@ section {
 }
 
 /* ===== Skills: Denk / Ontwerp / Bouw ===== */
-.skill-phases {
+.skill-fases {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 4rem;
 }
 
-.skill-phase {
+.skill-fase {
   padding-top: 2rem;
   border-top: 1px solid var(--border);
   transition: border-color 0.4s ease;
 }
 
-.skill-phase:hover {
+.skill-fase:hover {
   border-top-color: var(--accent);
 }
 
-.skill-phase-label {
+.skill-fase-label {
   display: block;
   margin-bottom: 1.5rem;
   font-size: 0.75rem;
@@ -785,7 +785,7 @@ section {
   color: var(--text-muted);
 }
 
-.skill-phase-word {
+.skill-fase-woord {
   font-family: var(--font-display);
   font-size: clamp(2.75rem, 4.5vw, 3.75rem);
   font-weight: 700;
@@ -796,23 +796,23 @@ section {
   transition: color 0.3s ease;
 }
 
-.skill-phase:hover .skill-phase-word {
+.skill-fase:hover .skill-fase-woord {
   color: var(--accent);
 }
 
-.skill-phase-desc {
+.skill-fase-uitleg {
   max-width: 320px;
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 2rem;
 }
 
-.skill-rows {
+.skill-lijst {
   list-style: none;
   border-top: 1px solid var(--border);
 }
 
-.skill-rows li {
+.skill-lijst li {
   display: flex;
   align-items: center;
   gap: 0.85rem;
@@ -824,7 +824,7 @@ section {
   transition: transform 0.3s ease;
 }
 
-.skill-rows li::before {
+.skill-lijst li::before {
   content: "";
   width: 6px;
   height: 6px;
@@ -832,19 +832,19 @@ section {
   background: var(--accent);
 }
 
-.skill-rows li:hover {
+.skill-lijst li:hover {
   transform: translateX(0.4rem);
 }
 
 @media (max-width: 1000px) {
-  .skill-phases {
+  .skill-fases {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
 }
 
 /* ===== Over mij ===== */
-.work-head .about-lead {
+.sectie-kop .about-titel {
   font-family: var(--font-display);
   font-size: clamp(1.5rem, 7vw, 4.5rem);
   font-weight: 700;
@@ -853,7 +853,7 @@ section {
   color: var(--text);
 }
 
-.word-rotator {
+.woorden-wissel {
   position: relative;
   display: inline-block;
   height: 1.25em;
@@ -862,7 +862,7 @@ section {
   color: var(--accent);
 }
 
-.word-rotator .word {
+.woorden-wissel .woord {
   display: block;
   position: absolute;
   left: 0;
@@ -874,18 +874,18 @@ section {
     transform 0.5s ease;
 }
 
-.word-rotator .word.is-active {
+.woorden-wissel .woord.is-active {
   position: relative;
   opacity: 1;
   transform: translateY(0);
 }
 
-.word-rotator .word.is-leaving {
+.woorden-wissel .woord.is-leaving {
   opacity: 0;
   transform: translateY(-30px);
 }
 
-.word-rotator {
+.woorden-wissel {
   height: 1.1em;
   white-space: nowrap;
 }
@@ -916,15 +916,15 @@ section {
 }
 
 /* education timeline next to the about text */
-.about-path {
+.tijdlijn {
   list-style: none;
 }
 
-.about-path li:first-child {
+.tijdlijn li:first-child {
   padding-top: 0;
 }
 
-.about-path li {
+.tijdlijn li {
   display: grid;
   grid-template-columns: 7rem minmax(0, 1fr);
   gap: 1rem;
@@ -932,7 +932,7 @@ section {
   border-bottom: 1px solid var(--border);
 }
 
-.about-path-when {
+.tijdlijn-wanneer {
   padding-top: 0.2rem;
   color: var(--accent);
   font-size: 0.75rem;
@@ -941,13 +941,13 @@ section {
   text-transform: uppercase;
 }
 
-.about-path-what strong {
+.tijdlijn-wat strong {
   display: block;
   color: var(--text);
   font-weight: 600;
 }
 
-.about-path-what span {
+.tijdlijn-wat span {
   display: block;
   color: var(--text-muted);
   font-size: 0.95rem;
@@ -1017,7 +1017,7 @@ section {
   color: var(--accent);
 }
 
-.contact-row:hover .work-arrow {
+.contact-row:hover .pijl {
   background: var(--accent);
   border-color: var(--accent);
   color: #ffffff;
@@ -1040,7 +1040,7 @@ section {
   .contact-value {
     grid-area: value;
   }
-  .contact-row .work-arrow {
+  .contact-row .pijl {
     grid-area: arrow;
     width: 2.5rem;
     height: 2.5rem;
@@ -1100,7 +1100,7 @@ footer {
   color: var(--accent);
 }
 
-.footer-copy {
+.footer-copyright {
   color: rgba(255, 255, 255, 0.45);
 }
 
@@ -1131,7 +1131,7 @@ footer {
     justify-content: flex-start;
   }
 
-  .footer-copy {
+  .footer-copyright {
     grid-row: 3;
   }
 
@@ -1157,11 +1157,11 @@ footer {
     display: none;
   }
 
-  .statement-line {
+  .slogan-regel {
     font-size: clamp(2.5rem, 12vw, 3.5rem);
   }
 
-  .statement-lines {
+  .slogan {
     letter-spacing: -1.5px;
   }
 }
@@ -1212,7 +1212,7 @@ footer {
 }
 
 /* ===== Projecten: editorial work list ===== */
-.work-head {
+.sectie-kop {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 4rem;
@@ -1220,7 +1220,7 @@ footer {
   margin-bottom: 4rem;
 }
 
-.work-head-top {
+.sectie-kop-boven {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
@@ -1233,7 +1233,7 @@ footer {
   text-transform: uppercase;
 }
 
-.work-eyebrow::before {
+.sectie-label::before {
   content: "";
   display: inline-block;
   width: 8px;
@@ -1243,12 +1243,12 @@ footer {
   vertical-align: 1px;
 }
 
-.work-count {
+.project-teller {
   color: var(--text-muted);
 }
 
-.work-head h1,
-.work-head h2 {
+.sectie-kop h1,
+.sectie-kop h2 {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
@@ -1257,7 +1257,7 @@ footer {
   color: var(--text);
 }
 
-.work-head p {
+.sectie-kop p {
   max-width: 440px;
   justify-self: end;
   color: var(--text-muted);
@@ -1265,12 +1265,12 @@ footer {
   line-height: 1.7;
 }
 
-.work-list {
+.project-lijst {
   border-top: 1px solid var(--border);
 }
 
 /* "view all projects" button under the featured list on the homepage */
-.work-all {
+.alle-projecten {
   margin-top: 3rem;
 }
 
@@ -1279,7 +1279,7 @@ footer {
   padding-top: calc(8rem + 90px);
 }
 
-.work-item {
+.project-item {
   position: relative;
   display: grid;
   grid-template-columns: 4rem minmax(0, 1.4fr) minmax(0, 0.9fr) 320px 3rem;
@@ -1293,7 +1293,7 @@ footer {
 }
 
 /* orange line that grows along the bottom on hover */
-.work-item::after {
+.project-item::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1306,17 +1306,17 @@ footer {
   transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-.work-item:hover::after,
-.work-item:focus-visible::after {
+.project-item:hover::after,
+.project-item:focus-visible::after {
   transform: scaleX(1);
 }
 
-.work-item:focus-visible {
+.project-item:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
 
-.work-index {
+.project-nummer {
   align-self: start;
   padding-top: 0.6rem;
   font-family: var(--font-display);
@@ -1326,7 +1326,7 @@ footer {
   font-variant-numeric: tabular-nums;
 }
 
-.work-title {
+.project-titel {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
@@ -1338,25 +1338,25 @@ footer {
     color 0.3s ease;
 }
 
-.work-item:hover .work-title {
+.project-item:hover .project-titel {
   transform: translateX(0.75rem);
   color: var(--accent);
 }
 
-.work-desc {
+.project-uitleg {
   max-width: 440px;
   color: var(--text-muted);
   line-height: 1.7;
 }
 
-.work-meta {
+.project-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.25rem;
 }
 
-.work-status {
+.status-label {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -1369,19 +1369,19 @@ footer {
   color: var(--text-muted);
 }
 
-.work-status::before {
+.status-label::before {
   content: "";
   width: 6px;
   height: 6px;
   background: currentColor;
 }
 
-.work-status.is-live {
+.status-label.is-live {
   border-color: var(--accent);
   color: var(--accent);
 }
 
-.work-tags {
+.project-tags {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -1390,18 +1390,18 @@ footer {
   color: var(--text);
 }
 
-.work-tags li + li::before {
+.project-tags li + li::before {
   content: "/";
   margin-right: 1rem;
   color: var(--border);
 }
 
-.work-media {
+.project-beeld {
   position: relative;
   aspect-ratio: 4 / 3;
 }
 
-.work-media-clip {
+.project-beeld-uitsnede {
   position: absolute;
   inset: 0;
   overflow: hidden;
@@ -1409,7 +1409,7 @@ footer {
 }
 
 /* Figma-style selection frame around the image on hover (same as the hero) */
-.work-frame {
+.selectie-kader {
   position: absolute;
   inset: -8px;
   border: 1px solid var(--accent);
@@ -1421,7 +1421,7 @@ footer {
     transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.work-frame i {
+.selectie-kader i {
   position: absolute;
   width: 9px;
   height: 9px;
@@ -1429,31 +1429,31 @@ footer {
   border: 1px solid var(--accent);
 }
 
-.work-frame i:nth-child(1) {
+.selectie-kader i:nth-child(1) {
   top: -5px;
   left: -5px;
 }
-.work-frame i:nth-child(2) {
+.selectie-kader i:nth-child(2) {
   top: -5px;
   right: -5px;
 }
-.work-frame i:nth-child(3) {
+.selectie-kader i:nth-child(3) {
   bottom: -5px;
   left: -5px;
 }
-.work-frame i:nth-child(4) {
+.selectie-kader i:nth-child(4) {
   bottom: -5px;
   right: -5px;
 }
 
-.work-item:hover .work-frame,
-.work-item:focus-visible .work-frame {
+.project-item:hover .selectie-kader,
+.project-item:focus-visible .selectie-kader {
   opacity: 1;
   transform: none;
 }
 
-.work-media img,
-.work-media .coming-soon-visual {
+.project-beeld img,
+.project-beeld .coming-soon-visual {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1463,29 +1463,29 @@ footer {
     filter 0.5s ease;
 }
 
-.work-media img {
+.project-beeld img {
   display: block;
 }
 
 /* Wide hero screenshot: show it whole on its own navy so the band blends in */
-.work-media-clip.lel-media {
+.project-beeld-uitsnede.licht-en-liefde-beeld {
   background: #222b4c;
 }
 
-.work-media-clip.lel-media img {
+.project-beeld-uitsnede.licht-en-liefde-beeld img {
   object-fit: contain;
 }
 
-.work-item:hover .work-media img,
-.work-item:hover .work-media .coming-soon-visual {
+.project-item:hover .project-beeld img,
+.project-item:hover .project-beeld .coming-soon-visual {
   transform: scale(1.06);
 }
 
-.work-media .coming-soon-name {
+.project-beeld .coming-soon-name {
   font-size: 2.5rem;
 }
 
-.work-arrow {
+.pijl {
   justify-self: end;
   display: grid;
   place-items: center;
@@ -1500,28 +1500,28 @@ footer {
     transform 0.4s ease;
 }
 
-.work-arrow svg {
+.pijl svg {
   width: 1.1rem;
   height: 1.1rem;
 }
 
-.work-item:hover .work-arrow {
+.project-item:hover .pijl {
   background: var(--accent);
   border-color: var(--accent);
   color: #ffffff;
   transform: rotate(45deg);
 }
 
-.work-item.is-coming-soon .work-title {
+.project-item.is-coming-soon .project-titel {
   color: var(--text);
 }
 
-.work-item.is-coming-soon:hover .work-title {
+.project-item.is-coming-soon:hover .project-titel {
   color: var(--text-muted);
 }
 
 @media (max-width: 1100px) {
-  .work-item {
+  .project-item {
     grid-template-columns: 3rem minmax(0, 1fr) 260px;
     grid-template-areas:
       "index main media"
@@ -1529,22 +1529,22 @@ footer {
     row-gap: 1.5rem;
   }
 
-  .work-index {
+  .project-nummer {
     grid-area: index;
   }
-  .work-main {
+  .project-tekst {
     grid-area: main;
   }
-  .work-meta {
+  .project-info {
     grid-area: meta;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
   }
-  .work-media {
+  .project-beeld {
     grid-area: media;
   }
-  .work-item .work-arrow {
+  .project-item .pijl {
     display: none;
   }
 }
@@ -1555,20 +1555,20 @@ footer {
     gap: 2.5rem;
   }
 
-  .work-head {
+  .sectie-kop {
     grid-template-columns: minmax(0, 1fr);
     row-gap: 1.5rem;
   }
 
-  .work-head-top {
+  .sectie-kop-boven {
     margin-bottom: 2rem;
   }
 
-  .work-head p {
+  .sectie-kop p {
     justify-self: start;
   }
 
-  .work-item {
+  .project-item {
     grid-template-columns: 2.5rem minmax(0, 1fr);
     grid-template-areas:
       "index media"
@@ -1578,17 +1578,17 @@ footer {
     padding: 2rem 0;
   }
 
-  .work-item:hover .work-title {
+  .project-item:hover .project-titel {
     transform: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .work-item::after,
-  .work-title,
-  .work-media img,
-  .work-media .coming-soon-visual,
-  .work-arrow {
+  .project-item::after,
+  .project-titel,
+  .project-beeld img,
+  .project-beeld .coming-soon-visual,
+  .pijl {
     transition: none;
   }
 }
@@ -1612,7 +1612,7 @@ footer {
   padding-top: calc(8rem + 90px);
 }
 
-.case-hero .work-head-top {
+.case-hero .sectie-kop-boven {
   margin-bottom: 3rem;
 }
 
@@ -1691,7 +1691,7 @@ footer {
 }
 
 .case-chapter-body .case-media,
-.case-chapter-body .case-embed {
+.case-chapter-body .case-prototype {
   margin-top: 2.5rem;
 }
 
@@ -1704,11 +1704,11 @@ footer {
   font-size: clamp(3.5rem, 12vw, 9rem);
 }
 
-.figma-embed-section {
+.figma-sectie {
   margin-top: 4rem;
 }
 
-.figma-embed-frame {
+.figma-kader {
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
@@ -1716,14 +1716,14 @@ footer {
   background: #ffffff;
 }
 
-.figma-embed-frame iframe {
+.figma-kader iframe {
   display: block;
   width: 100%;
   height: 100%;
   border: 0;
 }
 
-.figma-embed-frame.iphone-16-frame {
+.figma-kader.iphone-kader {
   position: relative;
   width: min(100%, 393px);
   aspect-ratio: 393 / 852;
@@ -1734,7 +1734,7 @@ footer {
   box-shadow: 0 1.5rem 3rem rgba(17, 24, 32, 0.22);
 }
 
-.figma-embed-frame.iphone-16-frame::before {
+.figma-kader.iphone-kader::before {
   content: "";
   position: absolute;
   top: 0.7rem;
@@ -1748,7 +1748,7 @@ footer {
   pointer-events: none;
 }
 
-.figma-embed-frame.iphone-16-frame iframe {
+.figma-kader.iphone-kader iframe {
   border: 0 !important;
   border-radius: 2.45rem;
 }
@@ -1983,21 +1983,21 @@ footer {
   padding-top: 0;
 }
 
-.case-next .work-item {
+.case-next .project-item {
   grid-template-columns: 4rem minmax(0, 1fr) 3rem;
   grid-template-areas: none;
   border-top: 1px solid var(--border);
 }
 
-.case-next .work-item > * {
+.case-next .project-item > * {
   grid-area: auto;
 }
 
-.case-next .work-arrow {
+.case-next .pijl {
   display: grid;
 }
 
-.case-next .work-index {
+.case-next .project-nummer {
   align-self: center;
   padding-top: 0;
   font-size: 0.75rem;
@@ -2036,52 +2036,52 @@ footer {
     gap: 1.5rem;
   }
 
-  .case-next .work-item {
+  .case-next .project-item {
     grid-template-columns: minmax(0, 1fr) 2.5rem;
   }
 
-  .case-next .work-index {
+  .case-next .project-nummer {
     display: none;
   }
 
-  .case-next .work-arrow {
+  .case-next .pijl {
     width: 2.5rem;
     height: 2.5rem;
   }
 }
 
 /* status label in a section header shouldn't push the header line down */
-.work-head-top {
+.sectie-kop-boven {
   align-items: center;
 }
 
-.work-head-top .work-status {
+.sectie-kop-boven .status-label {
   margin: -0.6rem 0;
 }
 
 /* "more projects on the way" placeholder row at the end of the list */
-.work-more {
+.meer-projecten {
   grid-template-columns: 4rem minmax(0, 1fr) auto;
   border: 1px dashed var(--border);
   border-width: 0 0 1px;
   color: var(--text-muted);
 }
 
-.work-more .work-title {
+.meer-projecten .project-titel {
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   color: var(--text-muted);
 }
 
-.work-more:hover .work-title {
+.meer-projecten:hover .project-titel {
   transform: none;
   color: var(--text-muted);
 }
 
-.work-more::after {
+.meer-projecten::after {
   display: none;
 }
 
-.work-more .work-index {
+.meer-projecten .project-nummer {
   align-self: center;
   padding-top: 0;
   font-size: 1.25rem;
@@ -2089,7 +2089,7 @@ footer {
 }
 
 @media (max-width: 1100px) {
-  .work-more {
+  .meer-projecten {
     grid-template-columns: 3rem minmax(0, 1fr);
     grid-template-areas:
       "index main"
@@ -2098,7 +2098,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .work-more {
+  .meer-projecten {
     grid-template-columns: 2.5rem minmax(0, 1fr);
   }
 }
@@ -2175,7 +2175,7 @@ footer {
     gap: 0;
   }
 
-  .nav-actions .cta-button {
+  .nav-actions .knop {
     padding: 0.6rem 0.8rem;
     font-size: 0.8rem;
   }
@@ -2209,14 +2209,14 @@ footer {
     letter-spacing: 0.04em;
   }
 
-  .nav-actions .cta-button {
+  .nav-actions .knop {
     padding: 0.6rem 0.6rem;
   }
 }
 
 /* keep the nav on one line; the section links make room below 1000px */
 .nav-links a,
-.nav-actions .cta-button,
+.nav-actions .knop,
 .nav-back {
   white-space: nowrap;
 }
@@ -2230,12 +2230,12 @@ footer {
 /* Section header line drawn like a smart guide when it scrolls into view:
    it sweeps in orange from the left, then settles to black. Without JS (or
    with reduced motion) the normal border is shown. */
-.work-head-top.will-draw {
+.sectie-kop-boven.nog-tekenen {
   position: relative;
   border-bottom-color: transparent;
 }
 
-.work-head-top.will-draw::after {
+.sectie-kop-boven.nog-tekenen::after {
   content: "";
   position: absolute;
   left: 0;
@@ -2250,12 +2250,12 @@ footer {
     background-color 0.6s ease 0.9s;
 }
 
-.work-head-top.is-drawn::after {
+.sectie-kop-boven.getekend::after {
   transform: scaleX(1);
   background-color: var(--text);
 }
 
-.head-handle {
+.lijn-hoekje {
   position: absolute;
   bottom: -4px;
   z-index: 1;
@@ -2267,20 +2267,20 @@ footer {
   transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.head-handle-start {
+.lijn-hoekje-begin {
   left: -3px;
 }
 
-.head-handle-end {
+.lijn-hoekje-eind {
   right: -3px;
 }
 
-.work-head-top.is-drawn .head-handle {
+.sectie-kop-boven.getekend .lijn-hoekje {
   transform: scale(1);
 }
 
 /* the end handle pops once the line has reached it */
-.work-head-top.is-drawn .head-handle-end {
+.sectie-kop-boven.getekend .lijn-hoekje-eind {
   transition-delay: 0.85s;
 }
 
@@ -2300,11 +2300,11 @@ footer {
   transition: background 0.3s ease;
 }
 
-.life-item .work-frame {
+.life-item .selectie-kader {
   inset: -1px;
 }
 
-.life-item:hover .work-frame {
+.life-item:hover .selectie-kader {
   opacity: 1;
   transform: none;
 }
@@ -2313,7 +2313,7 @@ footer {
   z-index: 1;
 }
 
-.life-num {
+.life-nummer {
   display: block;
   margin-bottom: 2.5rem;
   font-family: var(--font-display);
@@ -2323,7 +2323,7 @@ footer {
   transition: color 0.3s ease;
 }
 
-.life-item:hover .life-num {
+.life-item:hover .life-nummer {
   color: var(--accent);
 }
 
@@ -2367,7 +2367,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .life-num {
+  .life-nummer {
     margin-bottom: 1.5rem;
   }
 
